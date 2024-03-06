@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+.contHeader{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagenes/mydemonhome.png);
+    background-size: cover;
+    height: 450px;
+}
+.cont-drama{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagenes/kokdu.jpg);
+    background-size: cover;
+    height: 450px;
+}
+
+/* NAV */
+.navbar {
+    display: flex;
+    align-self: center;
+    width: 90%; 
+    border-radius: 50px;
+    background-color: #fffff2;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.navbar-brand {
+    margin-right: auto; 
+    padding-left: 50px;
+    color: #800020 !important;
+    font-weight: bold;
+}
+.nav-item{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar-nav a{
+    color: #800020 !important;
+}
+.navbar-brand:hover {
+    background-color: #800020;
+    color: #fffff2 !important;
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+.nav-link:hover {
+    background-color: #800020;
+    color: #fffff2 !important;
+    border-radius: 50px;
+    padding: 5px 15px;  
+}
+.navbar-toggler{
+    margin-right: 30px;
+    border-style: none;
+}
+
+/* CTA */
+.call{
+    margin-top: 20vh;
+    width: 80vw;
+    margin-left: 10vh;
+    position: relative;
+}
+h1{
+    color: #fffff2;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+h4{
+    color: #fffff2;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 18vh;
+    font-size: 16px;
+}
+.btn1{
+    text-decoration: none;
+    color: #800020;
+    background-color: #fffff2;
+    padding: 5px 15px;
+    font-weight: 500;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+/* BANNER */
+.banner{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+}
+
+/* CARD */
+.card{
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-style: none;
+}
+.card-img{
+    border-radius: 15px;
+}
+.card-title{
+    color: #800020;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-text {
+    color: #5E6472;
+    padding-bottom: 10px;
+}
+.btn {
+    background-color: #5E6472;
+    color: #fffff2;
+    border-radius: 50px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    font-size: 13px;
+    border-style: none;
+}
+
+.btn:hover {
+    background-color: #800020;
+}
+
+/* FOOTER */
+.footer-body{
+    width: 100%;
+    height: 450px;
+    background-image: url(../imagenes/fondofooter1.jpg);
+    background-size: cover;
+    background-position: right;
+}
+/* Sección enlaces */
+.redes {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 15px;
+    justify-content: center;
+}
+
+.redes a {
+    text-decoration: none;
+    padding-right: 15px;
+    font-size: 25px;
+    color: #5E6472;
+    margin-top: 15px;
+}
+
+.enlaces {
+    text-align: center;
+}
+
+.titulofooter1 {
+    color: #800020;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.enlaces1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.enlaces a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #800020;
+}
+
+/* Sección suscripción a newsletter */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulofooter2 {
+    color: #800020;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.email {
+    background-color: #fffff2;
+    border-style: solid 3px #800020;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input {
+    border: #5E6472 solid 2px;
+    background-color: #fffff2;
+    text-align: center;
+}
+
+input[type="email"] {
+    color: #800020;
+}
+
+input::placeholder {
+    color: #5E6472;
+
+}
+
+.buttonfooter {
+    background-color: #5E6472;
+    color: #fffff2;
+    border-color: #fffff2;
+    padding: 5px 15px;
+    border-style: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.buttonfooter:hover {
+    background-color: #800020;
+    color: #fffff2;
+}
+
+/* Sección copy rights y propietario */
+.textofooter2 {
+    color: #800020;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.textofooter {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.textofooter a {
+    text-decoration: underline;
+    color: #000000;
+    margin-right: 6px;
+}
+
+@media only screen and (min-width: 578px) {
+    .contHeader{
+        height: 450px;
+        background-position: left;
+    }
+    .cont-drama{
+        height: 450px;
+        background-position: left;
+    }
+    h4{
+        width: 55vw;
+    }
+    .btn1{
+        font-size: 1rem;
+        padding: 5px 15px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) { 
+    .col-md-6{
+        padding: 0;
+    }
+    .navbar-collapse{
+        display: flex;
+        justify-content: end;
+    }
+    .nav-item{
+        padding-left: 35px;
+        padding-right: 20px;
+    }
+    h4{
+        width: 45vw;
+        font-size: 17px;
+    }
+    .footer-body{
+        background-position: center;
+        height: 250px;
+    }
+    .redes {
+        justify-content: left;
+        margin-left: 55px;
+    }
+    
+    .redes a {
+        text-decoration: none;
+        padding-right: 7px;
+        font-size: 16px;
+        color: #fffff2;
+        margin-top: 12px;
+    }
+    
+    .enlaces {
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    
+    .titulofooter1 {
+        color: #fffff2;
+        font-size: 18px;
+        text-shadow: 0 0 5px #000,
+        0 0 5px #000;
+    }
+    
+    .enlaces1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .enlaces a {
+        font-size: 16px;
+        text-decoration: none;
+        color: #fffff2;
+        text-shadow: 0 0 5px #000,
+        0 0 5px #000;
+    }
+    .newsletter{
+        margin-top: 15px;
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (min-width: 1300px) { 
+    .contHeader{
+        height: 610px;
+    }
+    .cont-drama{
+        height: 610px;
+    }
+    .navbar-collapse{
+        display: flex;
+        justify-content: end;
+    }
+    .nav-item{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .call{
+        margin-top: 25vh;
+        margin-left: 8vw;
+    }
+    h4{
+        width: 35vw;
+        font-size: 25px;
+        margin-bottom: 60px;
+    }
+    .btn1{
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+    .footer-body{
+        height: 350px;
+    }
+    .redes{
+        margin-left: 40px;
+        margin-top: -5px;
+    }
+    .redes a{
+        font-size: 25px;
+        padding-right: 30px;
+    }
+    .enlaces{
+        margin-top: 65px;
+    }
+    .titulofooter1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .enlaces1 a{
+        font-size: 20px;
+    }
+    .titulofooter2{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .email{
+        font-size: 18px;
+        padding: 10px 25px;
+        margin-bottom: 20px;
+    }
+    .buttonfooter{
+        margin-bottom: 30px;
+    }
+    .textofooter2{
+        font-size: 20px;
+    }
+    .textofooter{
+        font-size: 16px;
+    }
+}
+
