@@ -14,14 +14,7 @@
     flex-direction: column;
     background-image: url(../imagenes/mydemonhome.png);
     background-size: cover;
-    height: 450px;
-}
-.cont-drama{
-    display: flex;
-    flex-direction: column;
-    background-image: url(../imagenes/kokdu.jpg);
-    background-size: cover;
-    height: 450px;
+    height: 400px;
 }
 
 /* NAV */
@@ -94,6 +87,12 @@ h4{
     border-radius: 50px;
     font-size: 1rem;
 }
+.btn1:hover {
+    background-color: #800020;
+    color: #fffff2;
+}
+
+/* Sección HOME (Dramalandia) */
 
 /* BANNER */
 .banner{
@@ -134,6 +133,51 @@ h4{
 .btn:hover {
     background-color: #800020;
 }
+
+
+/* Sección DRAMAS */
+
+.cont-drama{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagenes/kokdu.jpg);
+    background-size: cover;
+    height: 400px;
+    justify-content: left;
+}
+.filtros{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+}
+.btn-filtro1{
+    text-decoration: none;
+    color: #fffff2;
+    background-color: #800020;
+    padding: 5px 15px;
+    font-weight: 500;
+    border-radius: 50px;
+    font-size: 16px;
+    justify-content: center;
+}
+.btn-filtro1:hover {
+    background-color: #fffff2;
+    color: #800020;
+}
+.btn-filtro2{
+    text-decoration: none;
+    color: #fffff2;
+    background-color: #5E6472;
+    padding: 5px 15px;
+    font-weight: 500;
+    border-radius: 50px;
+    font-size: 16px;
+}
+.btn-filtro2:hover {
+    background-color: #fffff2;
+    color: #800020;
+}
+
 
 /* FOOTER */
 .footer-body{
@@ -261,6 +305,8 @@ input::placeholder {
     color: #000000;
     margin-right: 6px;
 }
+
+
 
 @media only screen and (min-width: 578px) {
     .contHeader{
