@@ -31,7 +31,7 @@
     width: 90%; 
     border-radius: 50px;
     background-color: #fffff2;
-    margin-top: 20px;
+    margin-top: 15px;
     position: absolute;
 }
 
@@ -82,7 +82,7 @@ h4{
     color: #fffff2;
     font-weight: normal;
     line-height: 1.5;
-    margin-bottom: 18vh;
+    margin-bottom: 10%;
     font-size: 16px;
 }
 .btn1{
@@ -296,13 +296,15 @@ input::placeholder {
     h4{
         width: 45vw;
         font-size: 17px;
+        margin-bottom: 10%;
     }
     .footer-body{
         background-position: center;
         height: 250px;
     }
     .redes {
-        justify-content: left;
+        justify-content: space-evenly;
+        padding-left: 20px;
         background-color: #800020;
         width: 300px;
         clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
@@ -311,12 +313,11 @@ input::placeholder {
     
     .redes a {
         text-decoration: none;
-        padding-right: 7px;
         font-size: 16px;
+        padding-right: 15px;
         color: #fffff2;
         margin-top: 10px;
         margin-bottom: 10px;
-        padding-left: 30px;
     }
     
     .enlaces {
@@ -350,7 +351,7 @@ input::placeholder {
     }
 }
 
-@media only screen and (min-width: 1300px) { 
+@media only screen and (min-width: 1200px) { 
     .contHeader{
         height: 610px;
     }
@@ -372,7 +373,7 @@ input::placeholder {
     h4{
         width: 35vw;
         font-size: 25px;
-        margin-bottom: 60px;
+        margin-bottom: 5%;
     }
     .btn1{
         font-size: 1.1rem;
@@ -382,14 +383,13 @@ input::placeholder {
         height: 350px;
     }
     .redes{
-        width: 400px;
-        clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+        width: 350px;
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
         align-items: center;
         margin-left: -1px;
     }
     .redes a{
         font-size: 25px;
-        padding-right: 30px;
     }
     .enlaces{
         margin-top: 60px;
