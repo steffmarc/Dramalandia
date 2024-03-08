@@ -112,6 +112,9 @@ h4{
 .card-img{
     border-radius: 15px;
 }
+.card-video{
+    border-radius: 15px;
+}
 .card-title{
     color: #800020;
     font-weight: 700;
@@ -396,10 +399,6 @@ input::placeholder {
     }
     .cont-drama{
         height: 610px;
-    }
-    .navbar-collapse{
-        display: flex;
-        justify-content: end;
     }
     .nav-item{
         padding-left: 50px;
