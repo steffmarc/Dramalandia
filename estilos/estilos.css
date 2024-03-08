@@ -16,6 +16,13 @@
     background-size: cover;
     height: 450px;
 }
+.cont-foodies{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagenes/comidacoreana.jpg);
+    background-size: cover;
+    height: 450px;
+}
 
 /* NAV */
 .navbar {
@@ -78,6 +85,10 @@ h4{
     margin-bottom: 10%;
     font-size: 16px;
     width: 45vw;
+}
+.h4-foodie{
+    width: 55vw;
+    margin-bottom: 5px;
 }
 .btn1{
     text-decoration: none;
@@ -194,6 +205,47 @@ h4{
     margin-left: 20px;
 }
 
+/* Sección FOODIES */
+.carousel-foodie{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.carousel-img{
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+}
+.card-foodie{
+    margin-bottom: 50px;
+}
+.texto-foodie{
+    color: #5E6472;
+    font-size: 18px;
+    font-weight: normal;   
+    margin-right: 30px;
+    padding-bottom: 30px;
+}
+.h3-04{
+    color: #800020;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;    
+}
+.botonfoodie{
+    text-decoration: none; 
+    color: #fffff2; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400; 
+    background-color: #5E6472; 
+    border-radius: 50px; 
+    padding: 10px 40px;
+    transition: background-color 0.3s ease;
+}
+.botonfoodie:hover {
+    background-color: #800020;
+    color: #fffff2;
+}
 
 /* FOOTER */
 .footer-body{
@@ -329,17 +381,25 @@ input::placeholder {
     }
     .navbar-collapse{
         display: flex;
-        justify-content: end;
+        justify-content: center;
     }
     .nav-item{
-        padding-left: 35px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     h4{
         width: 40vw;
         font-size: 17px;
         margin-bottom: 10%;
     }
+    .h4-foodie{
+        width: 45vw;
+    }
+
+    .carousel-img{
+        height: 350px;
+    }
+
     .footer-body{
         background-position: center;
         height: 250px;
@@ -400,6 +460,9 @@ input::placeholder {
     .cont-drama{
         height: 610px;
     }
+    .cont-foodies{
+        height: 610px;
+    }
     .nav-item{
         padding-left: 50px;
         padding-right: 50px;
@@ -413,6 +476,11 @@ input::placeholder {
         font-size: 25px;
         margin-bottom: 5%;
     }
+    .h4-foodie{
+        width: 40vw;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
     .btn1{
         font-size: 1.1rem;
         padding: 10px 20px;
@@ -420,6 +488,10 @@ input::placeholder {
     .btn-filtro1, .btn-filtro2{
         font-size: 20px;
     }
+    .carousel-img{
+        height: 400px;
+    }
+
     .footer-body{
         height: 350px;
     }
