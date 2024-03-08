@@ -33,17 +33,24 @@
     background-color: #fffff2;
     margin-top: 15px;
     position: absolute;
+    padding-left: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .navbar-brand {
     margin-right: auto; 
     padding-left: 50px;
     color: #800020 !important;
-    font-weight: bold;
+    font-weight: bold;  
+    padding: 5px 15px;
+    border-radius: 50px;
 }
 .nav-item{
     padding-left: 50px;
     padding-right: 50px;
+}
+.navbar-link{
+    padding: 5px 15px;
 }
 
 .navbar-nav a{
@@ -52,14 +59,11 @@
 .navbar-brand:hover {
     background-color: #800020;
     color: #fffff2 !important;
-    border-radius: 50px;
-    padding: 5px 15px;
+    
 }
 .nav-link:hover {
     background-color: #800020;
     color: #fffff2 !important;
-    border-radius: 50px;
-    padding: 5px 15px;  
 }
 .navbar-toggler{
     margin-right: 30px;
@@ -462,6 +466,10 @@ input::placeholder {
     }
     .cont-foodies{
         height: 610px;
+    }
+    .navbar-collapse{
+        display: flex;
+        justify-content: end;
     }
     .nav-item{
         padding-left: 50px;
