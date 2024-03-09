@@ -75,7 +75,8 @@
 .call{
     margin-top: 20vh;
     width: 90vw;
-    margin-left: 10vh;
+    margin-left: 30px;
+    margin-top: 100px;
 }
 h1{
     color: #fffff2;
@@ -119,7 +120,7 @@ h4{
 
 /* CARD */
 .card{
-    width: 100%;
+    width: 95%;
     margin-top: 5%;
     margin-bottom: 5%;
     border-style: none;
@@ -127,11 +128,17 @@ h4{
 .card-img{
     border-radius: 15px;
 }
-.card-video{
-    width: 100%;
-    height: auto;
+.card-body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-video{
+    width: 95%;
+    height: 180px;
+    display: flex;
+    margin: 0 auto;
+    
 }
 iframe{
     border-radius: 15px;
@@ -171,11 +178,9 @@ iframe{
     justify-content: left;
 }
 .filtros{
-    margin-top: 50px;
-    padding: 0 -12px;
     display: flex;
-    justify-content: flex-start;
-    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 25px 1rem 10px 1rem;
 }
 .btn-filtro1{
     text-decoration: none;
@@ -422,6 +427,15 @@ input::placeholder {
         width: 45vw;
     }
 
+    .filtros{
+        width: 50vw;
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+    .card-video{
+        height: 350px;
+    }
+
     .carousel-img{
         height: 350px;
     }
@@ -517,6 +531,15 @@ input::placeholder {
     }
     .btn-filtro1, .btn-filtro2{
         font-size: 20px;
+    }
+
+    .filtros{
+        width: 40vw;
+        margin-top: 50px;
+    }
+
+    .card-video{
+        height: 300px;
     }
     .carousel-img{
         height: 400px;

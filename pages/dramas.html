@@ -65,54 +65,47 @@
         </div>
 
         <!-- Filtros -->
-        <div class="container">
-            <div class="row col-lg-12 col-md-12 col-sd-12 filtros justify-content-start">
-                <!-- Botón 1 -->
-                <div class="d-flex justify-content-center col-lg-2 col-md-3 col-sm-3">
-                    <a href="#" target="_blank" class="btn btn-filtro1">Romántico</a>
-                </div>
-                <!-- Botón 2 -->
-                <div class="d-flex justify-content-center col-lg-2 col-md-3 col-sm-3">
-                    <a href="#" target="_blank" class="btn btn-filtro2">Acción</a>
-                </div>
-                <!-- Botón 3 -->
-                <div class="d-flex justify-content-center col-lg-2 col-md-3 col-sm-3">
-                    <a href="#" target="_blank" class="btn btn-filtro2">Drama</a>
-                </div>
-                <!-- Botón 4 -->
-                <div class="d-flex justify-content-center col-lg-2 d-lg-block d-md-3 d-sm-3">
-                    <a href="#" target="_blank" class="btn btn-filtro2">Fantasía</a>
-                </div>
-                <!-- Botón 5 -->
-                <div class="d-flex justify-content-center col-lg-2 d-lg-block d-md-none d-sm-none">
-                    <a href="#" target="_blank" class="btn btn-filtro2">Ficción</a>
-                </div>
-                <!-- Botón 6 -->
-                <div class="d-flex justify-content-center col-lg-2 d-lg-block d-md-none d-sm-none">
-                    <a href="#" target="_blank" class="btn btn-filtro2">Terror</a>
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="filtros btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-filtro1">Románticos</button>
+                <button type="button" class="btn btn-filtro2">Acción</button>
+
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Ver más
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <li><a class="dropdown-item" href="#">Drama</a></li>
+                        <li><a class="dropdown-item" href="#">Fantasía</a></li>
+                        <li><a class="dropdown-item" href="#">Ficción</a></li>
+                        <li><a class="dropdown-item" href="#">Terror</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+
 
         <!-- Cards -->
         <!-- Inicio card -->
         <div class="row justify-content-center">
             <div class="card" style="max-width: 1200px;">
                 <div class="row g-0">
-                    <div class="card-video col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                        <iframe src="https://www.youtube.com/embed/2fozxHwwSEk?si=RihlTIrxNJuxYyDe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="card-body">
-                            <h3 class="card-title">My Demon</h3>
-                            <p class="card-text">Do Do-hee, una decidida y poderosa heredera, y Jung Gu-won, un
-                                carismático demonio que, por un capricho del destino, pierde sus poderes sobrenaturales.
-                                La trama gira en torno a un matrimonio por contrato entre estos dos singulares
-                                personajes, creando una trama llena de giros, humor y emoción.</p>
-                            <div>
-                                <a href="#" class="btn-drama">Ver en:</a>
-                                <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
-                            </div>
+                        <iframe class="card-video" width="540" height="300"
+                            src="https://www.youtube.com/embed/2fozxHwwSEk?si=RihlTIrxNJuxYyDe"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body col-lg-6 col-md-12 col-sm-12">
+
+                        <h3 class="card-title">My Demon</h3>
+                        <p class="card-text">Do Do-hee, una decidida y poderosa heredera, y Jung Gu-won, un carismático demonio que, por un capricho del destino, pierde sus poderes sobrenaturales. La trama gira en torno a un matrimonio por contrato entre estos dos singulares personajes, creando una trama llena de giros, humor y emoción.</p>
+                        <div>
+                            <a href="#" class="btn-drama">Ver en:</a>
+                            <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
+
                         </div>
                     </div>
                 </div>
@@ -124,20 +117,19 @@
             <div class="card" style="max-width: 1200px;">
                 <div class="row g-0">
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <iframe class="card-video" width="540" height="300" src="https://www.youtube.com/embed/0x8cJUD6MMo?si=Zc70MYqsVeubPa85" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="card-video" width="540" height="300"
+                            src="https://www.youtube.com/embed/0x8cJUD6MMo?si=Zc70MYqsVeubPa85"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="card-body">
-                            <h3 class="card-title">Nevertheless</h3>
-                            <p class="card-text">Park Jae Eon y Yoo Na Bi, dos estudiantes de arte universitarios, se
-                                ven envueltos en un apasionante romance que desafía sus convicciones previas sobre el
-                                amor. Jae Eon, inicialmente indiferente, se enamora inesperadamente de Na Bi, quien,
-                                tras una decepción amorosa, encuentra en él una nueva oportunidad para el amor.</p>
-                            <div>
-                                <a href="#" class="btn-drama">Ver en:</a>
-                                <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
-                                <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="netflix">
-                            </div>
+                    <div class="card-body col-lg-6 col-md-12 col-sm-12">
+                        <h3 class="card-title">Nevertheless</h3>
+                        <p class="card-text">Park Jae Eon y Yoo Na Bi, dos estudiantes de arte universitarios, se ven envueltos en un apasionante romance que desafía sus convicciones previas sobre el amor. Jae Eon, inicialmente indiferente, se enamora inesperadamente de Na Bi, quien, tras una decepción amorosa, encuentra en él una nueva oportunidad para el amor.</p>
+                        <div>
+                            <a href="#" class="btn-drama">Ver en:</a>
+                            <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
+                            <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="netflix">
                         </div>
                     </div>
                 </div>
@@ -149,21 +141,20 @@
             <div class="card" style="max-width: 1200px;">
                 <div class="row g-0">
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <iframe class="card-video" width="540" height="300" src="https://www.youtube.com/embed/PNzsv-WADAM?si=1gXzaVKmOlOmj3QO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="card-video" width="540" height="300"
+                            src="https://www.youtube.com/embed/PNzsv-WADAM?si=1gXzaVKmOlOmj3QO"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="card-body">
+                    <div class="card-body col-lg-6 col-md-12 col-sm-12">
                             <h3 class="card-title">It's ok not to be ok</h3>
-                            <p class="card-text">Una historia de amor inesperada entre un trabajador de psiquiatría y
-                                una exitosa pero problemática escritora de libros infantiles. Moon Kang Tae, un hombre
-                                compasivo y talentoso, se enamora de una mujer desafiante y llena de secretos. Juntos,
-                                enfrentan obstáculos que los llevan a un viaje de autodescubrimiento y amor.</p>
+                            <p class="card-text">Una historia de amor inesperada entre un trabajador de psiquiatría y una exitosa pero problemática escritora de libros infantiles. Moon Kang Tae, un hombre compasivo y talentoso, se enamora de una mujer desafiante y llena de secretos. Juntos, enfrentan obstáculos que los llevan a un viaje de autodescubrimiento y amor.</p>
                             <div>
                                 <a href="#" class="btn-drama">Ver en:</a>
                                 <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
                                 <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="kocowa">
                                 <img class="symbols" src="../imagenes/viki-symbol.jpg" alt="viki">
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -175,17 +166,22 @@
             <div class="card" style="max-width: 1200px;">
                 <div class="row g-0">
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <iframe class="card-video" width="540" height="300" src="https://www.youtube.com/embed/kXV3kOCLN-k?si=Yrni6lnO0QTVgWn5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="card-video" width="540" height="300"
+                            src="https://www.youtube.com/embed/kXV3kOCLN-k?si=Yrni6lnO0QTVgWn5"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="card-body">
+                    <div class="card-body col-lg-6 col-md-12 col-sm-12">
                             <h3 class="card-title">Beautiful Gong Shim</h3>
-                            <p class="card-text">En el drama, Gong Shim, una joven soñadora, lucha por destacar bajo la sombra de su exitosa hermana, mientras alquila una habitación a un abogado desordenado, Dan Tae. Su amistad con Joon Soo, hijo de una familia adinerada, se entrelaza en un triángulo amoroso mientras luchan contra las manipulaciones de Gong Mi.</p>
+                            <p class="card-text">En el drama, Gong Shim, una joven soñadora, lucha por destacar bajo la
+                                sombra de su exitosa hermana, mientras alquila una habitación a un abogado desordenado,
+                                Dan Tae. Su amistad con Joon Soo, hijo de una familia adinerada, se entrelaza en un
+                                triángulo amoroso mientras luchan contra las manipulaciones de Gong Mi.</p>
                             <div>
                                 <a href="#" class="btn-drama">Ver en:</a>
                                 <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
                                 <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="netflix">
-                            </div>
                         </div>
                     </div>
                 </div>
