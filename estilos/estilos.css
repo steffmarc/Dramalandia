@@ -286,8 +286,8 @@ h2{
     color: #800020;
     font-weight: bold;
     margin-top: 50px;
-    margin-bottom: 50px;
     font-size: 40px;
+    margin-bottom: -50px;
 }
 .sub-fav{
     color: #fffff2;
@@ -296,19 +296,28 @@ h2{
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 20px;
+    margin-top: 100px;
 }
 .img-fav{
     width: 100%;
     height: auto;
     border-radius: 20px;
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .text-fav{
     color: #800020;
     font-weight: bold;
+    margin-top: 15px;
+    margin-left: 20px;
 }
-
+.ver-receta{
+    color: #5E6472;
+    margin-left: 20px;
+}
+.ver-receta:hover{
+    color: #800020;
+}
 
 /* FOOTER */
 .footer-body{
@@ -317,6 +326,7 @@ h2{
     background-image: url(../imagenes/fondofooter1.jpg.png);
     background-size: cover;
     background-position: right;
+    margin-top: 50px;
 }
 /* Sección enlaces */
 .redes {
