@@ -31,6 +31,13 @@
     background-size: cover;
     height: 610px;
 }
+.cont-perfil{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagenes/chaeunwoo.png);
+    background-size: cover;
+    height: 610px;
+}
 
 /* NAV */
 .navbar {
@@ -474,7 +481,7 @@ input::placeholder {
 /* Botón subir o cambiar imágenes */
 .boton-upload {
     position: absolute;
-    bottom: -80px;
+    bottom: 0px;
     right: 10px;
     padding: 10px 15px;
     background-color: rgba(255, 255, 255, 0.5); 
