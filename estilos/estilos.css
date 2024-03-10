@@ -281,6 +281,35 @@ iframe{
     color: #fffff2;
 }
 
+/* PERFIL */
+h2{
+    color: #800020;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.sub-fav{
+    color: #fffff2;
+    background-color: #800020;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.img-fav{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.text-fav{
+    color: #800020;
+    font-weight: bold;
+}
+
+
 /* FOOTER */
 .footer-body{
     width: 100%;
