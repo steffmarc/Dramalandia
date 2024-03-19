@@ -1,49 +1,131 @@
-.filtros{
+.filtros {
+    width: 80%;
+    margin: $margin-card;
     display: flex;
-    justify-content: center;
-    margin: 25px 1rem 10px 1rem;
-}
-.btn-filtro1{
-    text-decoration: none;
-    color: $color-complementario;
-    background-color: $color-primario;
-    padding: 5px 15px;
-    font-weight: $font-500;
-    border-radius: 50px;
-    font-size: 16px;
-    justify-content: center;
-}
-.btn-filtro1:hover {
-    background-color: $color-acento;
-    color: $color-complementario;
-}
-.btn-filtro2{
-    text-decoration: none;
-    color: $color-complementario;
-    background-color: $color-acento;
-    padding: 5px 15px;
-    font-weight: $font-500;
-    border-radius: 50px;
-    font-size: 16px;
-}
-.btn-filtro2:hover {
-    background-color: $color-primario;
-    color: $color-complementario;
-}
-.btn-drama{
-    text-decoration: none;
-    color: $color-acento;
-    font-weight: $font-500;
-    border-radius: 50px;
-    font-size: 16px;
-}
-.symbols{
-    width: 35px;
-    height: 35px;
-    border-radius: 50px;
-    margin-left: 20px;
+    overflow-x: hidden;
+    justify-content: flex-start;
+    gap: 15px;
 }
 
-iframe{
+@mixin boton($bg-color, $font-color: #fffff2) {
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: $bg-color;
+    color: $font-color;
+    border-style: none;
+    transition: 400ms linear;
+    font-size: 13px;
+}
+
+.btn2 {
+    @include boton($color-acento);
+
+    &:hover {
+        background-color: $color-primario;
+    }
+}
+
+.btn3 {
+    @include boton($color-complementario, $color-primario);
+    border: 1.5px solid $color-primario;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-complementario;
+    }
+}
+
+.card{
+    .card-body{
+        .btn-drama {
+            text-decoration: none;
+            color: $color-acento;
+            font-weight: $font-500;
+            border-radius: 50px;
+            font-size: 16px;
+        }
+        
+        .symbols {
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            margin: 0 0 0 20px;
+        }
+    }
+}
+
+
+iframe {
     border-radius: 15px;
+}
+
+@media only screen and (min-width: 578px) {
+    .call{
+        h4{
+            width: 40vw;
+        }
+    }
+
+    .filtros {
+        gap: 34px;
+    }
+
+    .btn2 {
+        font-size: 16px;
+    }
+
+    .btn3 {
+        font-size: 16px;
+    }
+
+    .card {
+        margin-top: 0;
+
+        .card-video {
+            height: 250px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .call{
+        h4{
+            width: 30vw;
+        }
+    }
+
+    .filtros {
+        gap: 50px;
+    }
+
+    .btn2 {
+        font-size: 20px;
+    }
+
+    .btn3 {
+        font-size: 20px;
+    }
+
+    .card {
+        .card-video {
+            height: 350px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .card {
+        .card-video {
+            height: 310px;
+        }
+    }
+
+    .filtros{
+        overflow-x: visible;
+        width: 100%;
+        justify-content: center;
+        gap: 80px;
+        margin: 50px 0 80px -30px;
+    }
 }

@@ -118,7 +118,7 @@ html {
   line-height: 1.5;
   margin: 5vh 0 5vh 0;
   font-size: 16px;
-  width: 80vw;
+  width: 75vw;
 }
 .call .btn1 {
   text-decoration: none;
@@ -183,9 +183,10 @@ html {
 }
 .card .card-video {
   width: 95%;
-  height: 180px;
+  height: 170px;
   display: flex;
   margin: 0 auto;
+  border-radius: 30px;
 }
 
 /* FOOTER */
@@ -402,7 +403,7 @@ html {
   }
   .card .card-body .card-text {
     font-size: 18px;
-    margin: 5vh 0 5vh 0;
+    margin: 2.5vh 0 2.5vh 0;
   }
   .card .card-body .btn {
     font-size: 16px;
@@ -468,18 +469,18 @@ html {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .cont-header {
+  .cont-header, .cont-drama, .cont-foodies, .cont-eventos, .cont-perfil {
     height: 610px;
   }
-  .cont-header .navbar-collapse {
+  .cont-header .navbar-collapse, .cont-drama .navbar-collapse, .cont-foodies .navbar-collapse, .cont-eventos .navbar-collapse, .cont-perfil .navbar-collapse {
     justify-content: end;
     margin-right: 50px;
   }
-  .cont-header .call {
+  .cont-header .call, .cont-drama .call, .cont-foodies .call, .cont-eventos .call, .cont-perfil .call {
     margin-top: 180px;
     margin-left: 7%;
   }
-  .cont-header .call h4 {
+  .cont-header .call h4, .cont-drama .call h4, .cont-foodies .call h4, .cont-eventos .call h4, .cont-perfil .call h4 {
     width: 35vw;
     font-size: 25px;
     margin: 5vh 0 5vh 0;
@@ -560,61 +561,110 @@ html {
   }
 }
 .filtros {
+  width: 80%;
+  margin: 5vh 5vh 5vh 5vh;
   display: flex;
-  justify-content: center;
-  margin: 25px 1rem 10px 1rem;
+  overflow-x: hidden;
+  justify-content: flex-start;
+  gap: 15px;
 }
 
-.btn-filtro1 {
-  text-decoration: none;
+.btn2 {
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: #5E6472;
   color: #fffff2;
+  border-style: none;
+  transition: 400ms linear;
+  font-size: 13px;
+}
+.btn2:hover {
   background-color: #800020;
+}
+
+.btn3 {
   padding: 5px 15px;
-  font-weight: 500;
-  border-radius: 50px;
-  font-size: 16px;
-  justify-content: center;
+  border-radius: 20px;
+  background-color: #fffff2;
+  color: #800020;
+  border-style: none;
+  transition: 400ms linear;
+  font-size: 13px;
+  border: 1.5px solid #800020;
 }
-
-.btn-filtro1:hover {
-  background-color: #5E6472;
-  color: #fffff2;
-}
-
-.btn-filtro2 {
-  text-decoration: none;
-  color: #fffff2;
-  background-color: #5E6472;
-  padding: 5px 15px;
-  font-weight: 500;
-  border-radius: 50px;
-  font-size: 16px;
-}
-
-.btn-filtro2:hover {
+.btn3:hover {
   background-color: #800020;
   color: #fffff2;
 }
 
-.btn-drama {
+.card .card-body .btn-drama {
   text-decoration: none;
   color: #5E6472;
   font-weight: 500;
   border-radius: 50px;
   font-size: 16px;
 }
-
-.symbols {
-  width: 35px;
-  height: 35px;
+.card .card-body .symbols {
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
-  margin-left: 20px;
+  margin: 0 0 0 20px;
 }
 
 iframe {
   border-radius: 15px;
 }
 
+@media only screen and (min-width: 578px) {
+  .call h4 {
+    width: 40vw;
+  }
+  .filtros {
+    gap: 34px;
+  }
+  .btn2 {
+    font-size: 16px;
+  }
+  .btn3 {
+    font-size: 16px;
+  }
+  .card {
+    margin-top: 0;
+  }
+  .card .card-video {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .call h4 {
+    width: 30vw;
+  }
+  .filtros {
+    gap: 50px;
+  }
+  .btn2 {
+    font-size: 20px;
+  }
+  .btn3 {
+    font-size: 20px;
+  }
+  .card .card-video {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card .card-video {
+    height: 310px;
+  }
+  .filtros {
+    overflow-x: visible;
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
+    margin: 50px 0 80px -30px;
+  }
+}
 .h4-foodie {
   width: 80vw;
   margin-bottom: 5px;

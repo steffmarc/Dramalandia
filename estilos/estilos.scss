@@ -140,7 +140,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
         line-height: 1.5;
         margin: $margin-sm;
         font-size: 16px;
-        width: 80vw;
+        width: 75vw;
     }
 
     .btn1 {
@@ -216,9 +216,10 @@ $margin-card: 5vh 5vh 5vh 5vh;
 
     .card-video {
         width: 95%;
-        height: 180px;
+        height: 170px;
         display: flex;
         margin: 0 auto;
+        border-radius: 30px;
 
     }
 }
@@ -376,8 +377,6 @@ $margin-card: 5vh 5vh 5vh 5vh;
 // Ajustes responsive
 
 @media only screen and (min-width: 578px) {
-
-    // Header
     .call {
         margin-top: 12vh;
 
@@ -387,7 +386,6 @@ $margin-card: 5vh 5vh 5vh 5vh;
         }
     }
 
-    // Card
     .card {
 
         .card-body {
@@ -410,7 +408,6 @@ $margin-card: 5vh 5vh 5vh 5vh;
         }
     }
 
-    // Footer
     .footer-body {
         height: 800px;
 
@@ -486,7 +483,6 @@ $margin-card: 5vh 5vh 5vh 5vh;
                 margin: $margin-sm;
             }
         }
-
     }
 
     .banner {
@@ -506,7 +502,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
 
             .card-text {
                 font-size: $texto;
-                margin: $margin-sm;
+                margin: $margin-xs;
             }
 
             .btn {
@@ -592,7 +588,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
 }
 
 @media only screen and (min-width: 1200px) {
-    .cont-header {
+    .cont-header, .cont-drama, .cont-foodies, .cont-eventos, .cont-perfil {
         height: 610px;
 
         .navbar-collapse {
