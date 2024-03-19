@@ -6,40 +6,67 @@
 .carousel-foodie{
     margin-top: 50px;
     margin-bottom: 50px;
+
+    .carousel-img{
+        border-radius: 20px;
+        width: 100%;
+        height: 200px;
+    }
 }
-.carousel-img{
-    border-radius: 20px;
-    width: 100%;
-    height: 300px;
-}
+
 .card-foodie{
     margin-bottom: 50px;
+
+    .h3-04{
+        color: $color-primario;
+        font-size: 25px;
+        font-weight: $font-bold;
+        margin-bottom: 10px;    
+    }
+    .texto-foodie{
+        color: $color-acento;
+        font-size: 18px;
+        font-weight: $font-normal;   
+        padding-bottom: 30px;
+    }
+    .botonfoodie{
+        text-decoration: none; 
+        color: $color-complementario; 
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        font-weight: 400; 
+        background-color: $color-acento; 
+        border-radius: 50px; 
+        padding: 10px 30px;
+        transition: background-color 0.3s ease;
+
+        &:hover{
+            background-color: $color-primario;
+            color: $color-complementario;
+        }
+    }
 }
-.texto-foodie{
-    color: $color-acento;
-    font-size: 18px;
-    font-weight: $font-normal;   
-    margin-right: 30px;
-    padding-bottom: 30px;
+
+@media only screen and (min-width: 578px) {
+    .carousel-foodie{
+        .carousel-img{
+            height: 280px;
+        }
+    }
 }
-.h3-04{
-    color: $color-primario;
-    font-size: 25px;
-    font-weight: $font-bold;
-    margin-bottom: 10px;    
+
+@media only screen and (min-width: 768px) {
+    .carousel-foodie{
+        .carousel-img{
+            height: 350px;
+        }
+    }
 }
-.botonfoodie{
-    text-decoration: none; 
-    color: $color-complementario; 
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    font-weight: 400; 
-    background-color: $color-acento; 
-    border-radius: 50px; 
-    padding: 10px 40px;
-    transition: background-color 0.3s ease;
-}
-.botonfoodie:hover {
-    background-color: $color-primario;
-    color: $color-complementario;
+
+@media only screen and (min-width: 1200px) {
+    .carousel-foodie{
+        .carousel-img{
+            height: 450px;
+        }
+    }
 }

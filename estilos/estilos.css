@@ -376,17 +376,17 @@ html {
   }
 }
 @media only screen and (min-width: 768px) {
-  .cont-header {
+  .cont-header, .cont-drama, .cont-foodies, .cont-eventos, .cont-perfil {
     height: 500px;
   }
-  .cont-header .navbar .navbar-nav .nav-item {
+  .cont-header .navbar .navbar-nav .nav-item, .cont-drama .navbar .navbar-nav .nav-item, .cont-foodies .navbar .navbar-nav .nav-item, .cont-eventos .navbar .navbar-nav .nav-item, .cont-perfil .navbar .navbar-nav .nav-item {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .cont-header .call {
+  .cont-header .call, .cont-drama .call, .cont-foodies .call, .cont-eventos .call, .cont-perfil .call {
     margin-top: 120px;
   }
-  .cont-header .call h4 {
+  .cont-header .call h4, .cont-drama .call h4, .cont-foodies .call h4, .cont-eventos .call h4, .cont-perfil .call h4 {
     width: 40vw;
     font-size: 17px;
     margin: 5vh 0 5vh 0;
@@ -674,33 +674,28 @@ iframe {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
-.carousel-img {
+.carousel-foodie .carousel-img {
   border-radius: 20px;
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 
 .card-foodie {
   margin-bottom: 50px;
 }
-
-.texto-foodie {
-  color: #5E6472;
-  font-size: 18px;
-  font-weight: normal;
-  margin-right: 30px;
-  padding-bottom: 30px;
-}
-
-.h3-04 {
+.card-foodie .h3-04 {
   color: #800020;
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
-.botonfoodie {
+.card-foodie .texto-foodie {
+  color: #5E6472;
+  font-size: 18px;
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+.card-foodie .botonfoodie {
   text-decoration: none;
   color: #fffff2;
   font-family: "Poppins", sans-serif;
@@ -708,15 +703,29 @@ iframe {
   font-weight: 400;
   background-color: #5E6472;
   border-radius: 50px;
-  padding: 10px 40px;
+  padding: 10px 30px;
   transition: background-color 0.3s ease;
 }
-
-.botonfoodie:hover {
+.card-foodie .botonfoodie:hover {
   background-color: #800020;
   color: #fffff2;
 }
 
+@media only screen and (min-width: 578px) {
+  .carousel-foodie .carousel-img {
+    height: 280px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .carousel-foodie .carousel-img {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .carousel-foodie .carousel-img {
+    height: 450px;
+  }
+}
 /* Contenedor principal Eventos */
 .contenedoreventos {
   height: auto;

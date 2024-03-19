@@ -462,7 +462,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
 }
 
 @media only screen and (min-width: 768px) {
-    .cont-header {
+    .cont-header, .cont-drama, .cont-foodies, .cont-eventos, .cont-perfil {
         height: 500px;
 
         .navbar {
