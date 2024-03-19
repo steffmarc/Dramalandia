@@ -1,0 +1,68 @@
+h2{
+    color: $color-primario;
+    font-weight: $font-bold;
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: -50px;
+}
+.sub-fav{
+    color: $color-complementario;
+    background-color: $color-primario;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 100px;
+}
+.img-fav{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.text-fav{
+    color: $color-primario;
+    font-weight: $font-bold;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.ver-receta{
+    color: $color-acento;
+    margin-left: 20px;
+}
+.ver-receta:hover{
+    color: $color-primario;
+}
+
+/* Banner principal Perfil */
+.portadaperfil{
+    grid-area: portadaeventos;
+    background-image: url(../imagenes/chaeunwoo.png);
+    height: 700px;
+    justify-content: center;
+}
+/* Botón subir o cambiar imágenes */
+.boton-upload {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border: none;
+    border-radius: 50px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+.boton-upload:hover {
+    background-color: $color-complementario; 
+    color: $color-primario;
+}
+#file-upload {
+    display: none; 
+}
+.boton-submit {
+    margin-top: 10px; 
+}
+

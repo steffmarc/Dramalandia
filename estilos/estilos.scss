@@ -1,0 +1,682 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+// Design system
+
+// Colores
+$color-primario: #800020;
+$color-complementario: #fffff2;
+$color-acento: #5E6472;
+
+// Tipografía
+$font-bold: bold;
+$font-normal: normal;
+$font-500: 500;
+$titulos: 30px;
+$subtitulos: 25px;
+$texto: 18px;
+
+// Margenes
+$margin-xs: 2.5vh 0 2.5vh 0;
+$margin-sm: 5vh 0 5vh 0;
+$margin-md: 10vh 0 10vh 0;
+$margin-lg: 15vh 0 15vh 0;
+$margin-banner: 10vh 0 5vh 0;
+$margin-card: 5vh 5vh 5vh 5vh;
+
+// Header
+@mixin contenedor-header($bg-header) {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    height: 430px;
+    background-image: $bg-header;
+}
+
+.cont-header{
+    @include contenedor-header(url(../imagenes/mydemonhome.png));
+}
+
+.cont-drama{
+    @include contenedor-header(url(../imagenes/kokdu.jpg));
+}
+
+.cont-foodies{
+    @include contenedor-header(url(../imagenes/comidacoreana.jpg));
+}
+
+.cont-eventos{
+    @include contenedor-header(url(../imagenes/kpop3.jpeg));
+}
+.cont-perfil{
+    @include contenedor-header(url(../imagenes/chaeunwoo.png));
+}
+
+/* NAV */
+.navbar {
+    display: flex;
+    align-self: center;
+    width: 90%; 
+    border-radius: 50px;
+    background-color: $color-complementario;
+    margin-top: 15px;
+    position: absolute;
+    padding-left: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    .navbar-brand {
+        margin-right: auto; 
+        padding-left: 50px;
+        color: $color-primario !important;
+        font-weight: $font-bold;  
+        padding: 5px 15px;
+        border-radius: 50px;
+
+        &:hover{
+            background-color: $color-primario;
+            color: $color-complementario !important;
+        }
+    }
+
+    .navbar-toggler{
+        margin-right: 30px;
+        border-style: none;
+    }
+
+    .navbar-nav {
+
+        .nav-item{
+            padding-left: 20px;
+            padding-right: 50px;
+
+            .nav-link {
+                color: $color-primario !important;
+                border-radius: 50px;
+                padding: 5px 15px;
+
+                &:hover{
+                    background-color: $color-primario;
+                    color: $color-complementario !important;
+                }
+            }
+        }
+    }
+}
+
+
+/* CTA */
+.call{
+    width: 90vw;
+    height: 500px;
+    margin-left: 40px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-top: 20vh;
+
+    h1{
+        color: $color-complementario;
+        font-weight: $font-bold;
+        margin-bottom: -8px;
+    }
+    h4{
+        color: $color-complementario;
+        font-weight: $font-normal;
+        line-height: 1.5;
+        margin: $margin-sm;
+        font-size: 16px;
+        width: 80vw;
+    }
+
+    .btn1{
+        text-decoration: none;
+        color: $color-primario;
+        background-color: $color-complementario;
+        padding: 5px 15px;
+        font-weight: $font-500;
+        border-radius: 50px;
+        font-size: 1rem;
+        align-self: flex-start;
+
+        &:hover{
+            background-color: $color-primario;
+            color: $color-complementario;
+        }
+    }
+}
+
+// Banner
+.banner{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    margin: $margin-sm;
+}
+
+/* CARD */
+.card{
+    width: 90%;
+    border-style: none;
+    margin: $margin-card;
+
+    .card-img{
+        border-radius: 15px;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img{
+            margin: $margin-sm
+        }
+
+        .card-title{
+            color: $color-primario;
+            font-weight: $font-bold;
+            margin-bottom: -8px;
+        }
+        .card-text {
+            color: $color-acento;
+            margin: $margin-sm;
+        }
+        .btn {
+            background-color: $color-acento;
+            color: $color-complementario;
+            border-radius: 50px;
+            transition: background-color 0.5s ease, color 0.5s ease;
+            font-size: 12px;
+            border-style: none;
+            width: 35%;
+            margin: $margin-sm;
+
+            &:hover{
+                background-color: $color-primario;
+            }
+        }
+    }
+    .card-video{
+        width: 95%;
+        height: 180px;
+        display: flex;
+        margin: 0 auto;
+        
+    }
+}
+
+
+/* FOOTER */
+.footer-body{
+    width: 100%;
+    height: 530px;
+    background-image: url(../imagenes/fondofooter1.jpg.png);
+    background-size: cover;
+    background-position: right;
+    margin-top: 50px;
+
+    /* Sección enlaces */
+    .redes {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin: $margin-sm; 
+        transition: background-color 0.5s ease, color 0.5s ease;
+        
+        a {
+            text-decoration: none;
+            font-size: 25px;
+            color: $color-acento;
+            padding: 0 20px;
+
+            &:hover{
+                color: $color-primario;
+            }
+        }
+    }
+
+    .enlaces {
+        text-align: center;
+
+        .titulofooter1 {
+            color: $color-primario;
+            font-size: 18px;
+            font-weight: $font-bold;
+            margin: $margin-xs;
+        }
+        
+        .enlaces1 {
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.5s ease, color 0.5s ease;
+
+            a{
+                font-size: 16px;
+                text-decoration: none;
+                color: $color-acento;
+
+                &:hover{
+                    color: $color-primario;
+                }
+            }
+        }
+    }
+
+    /* Sección suscripción a newsletter */
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .titulofooter2 {
+            color: $color-primario;
+            font-size: 18px;
+            font-weight: $font-bold;
+            margin-top: 30px;
+            margin-bottom: -8px;
+        }
+
+        .email {
+            background-color: $color-complementario;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 5px 15px;
+            border-radius: 50px;
+            text-align: center;
+            margin: $margin-sm;
+            color: $color-primario;
+            border: solid 2px $color-primario;
+        }
+        
+
+        input::placeholder {
+            color: $color-acento;
+        }
+
+        .buttonfooter {
+            background-color: $color-acento;
+            color: $color-complementario;
+            border-color: $color-complementario;
+            border-style: none;
+            padding: 5px 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: background-color 0.5s ease, color 0.5s ease;
+
+            &:hover{
+                background-color: $color-primario;
+                color: $color-complementario;
+            }
+        }
+    }
+
+    /* Sección copy rights y propietario */
+    .textofooter2 {
+        color: $color-primario;
+        font-size: 13px;
+        font-weight: 400;
+        margin: $margin-sm;
+        width: 100%;
+        text-align: center;
+    }
+    .textofooter {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    a{
+        text-decoration: underline;
+        color: #000000;
+        margin-right: 6px;
+    }
+}
+
+// Botón Subir
+
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff7f;
+    color: $color-acento;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px #fff;
+
+    &:hover{
+        background-color: $color-primario;
+        color: $color-complementario;
+    }
+}
+
+
+// Ajustes responsive
+
+@media only screen and (min-width: 578px){
+    // Header
+    .call{
+        margin-top: 12vh;
+
+        h4{
+            width: 45vw;
+            margin: $margin-xs;
+        }
+    } 
+
+    // Card
+    .card{
+        
+        .card-body{
+            img{
+                margin: $margin-xs;
+            }
+            .card-text{
+                margin: $margin-xs;
+            }
+            .btn{
+                margin: $margin-xs;
+            }
+            .card-video{
+                height: 280px;
+            }
+        }
+        .card-img-top{
+            margin-bottom: 30px;
+    }
+    } 
+
+    // Footer
+    .footer-body{
+        height: 800px;
+
+        .redes{
+            margin-top: 30px;
+            
+            a{
+                font-size: 35px;
+            }
+        }
+        .enlaces{
+            .titulofooter1{
+                font-size: 30px;
+            }
+            .enlaces1 a{
+                font-size: 25px;
+            }
+        }
+        .newsletter{
+            .titulofooter2{
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .email{
+                width: 50vw;
+                font-size: 16px;
+                margin: $margin-xs;
+            }
+            .buttonfooter{
+                font-size: 16px;
+            }
+        }
+        .textofooter2{
+            font-size: 18px;
+        }
+        .textofooter{
+            font-size: 16px;
+        }
+    }
+
+    .subir{
+        bottom: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) { 
+    .cont-header{
+        height: 500px;
+
+        .navbar{
+            .navbar-nav{
+                .nav-item{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+        }
+        
+        .call{
+            margin-top: 120px;
+        }
+        h4{
+            width: 40vw;
+            font-size: 17px;
+            margin: $margin-sm;
+        }
+    }    
+    
+    .card{
+        .card-body{
+            img{
+                width: 100px;
+                height: auto;
+            }
+            .card-title{
+                font-size: $titulos;
+            }
+            .card-text{
+                font-size: $texto;
+            }
+            .btn{
+                font-size: 20px;
+                padding: 10px 10px;
+            }
+        }
+        .card-img-top{
+            margin-bottom: 30px;
+    }
+    }
+
+
+    .footer-body{
+        height: 400px;
+        background-position: 70% 0;
+
+        .redes {
+            justify-content: space-evenly;
+            background-color: $color-primario;
+            width: 350px;
+            height: 50px;
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+            align-items: center;
+            margin: 0;
+
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                color: $color-complementario;
+                padding: 0;
+                margin: 0 -6px 0 0;
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+        .enlaces {
+            text-align: left;
+            margin-left: 50px;
+            margin-top: 40px;
+
+            .titulofooter1 {
+                color: $color-complementario;
+                text-shadow: 0 0 5px #000,
+                0 0 5px #000;
+            }
+
+            .enlaces1 {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    color: $color-complementario;
+                    text-shadow: 0 0 5px #000,
+                    0 0 5px #000;
+                }
+            }
+        }
+        
+        .newsletter{
+            .email{
+                width: 40vw;
+                font-size: 16px;
+                margin: $margin-xs;
+            }
+        }
+        .textofooter2{
+            margin-left: -70px;
+            width: 60vw;
+            font-size: 20px;
+        }
+        .textofooter{
+            font-size: 18px;
+            margin-left: -90px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) { 
+    .cont-header{
+        height: 610px;
+
+        .navbar-collapse{
+            justify-content: end;
+            margin-right: 50px;
+        }
+        
+        .call{
+            margin-top: 180px;
+            margin-left: 7%;
+        }
+        h4{
+            width: 35vw;
+            font-size: $subtitulos;
+            margin: $margin-md;
+        }
+    }    
+    
+    .banner{
+        margin: $margin-lg;
+    }
+
+    .card{
+
+        .card-img{
+            height: 370px;
+        }
+        .card-img-top{
+            width: 50%;
+        }
+        .card-body{
+            img{
+                width: 70px;
+                height: auto;
+            }
+    }
+    }
+
+    .subir{
+        bottom: 40px;
+    }
+
+    .footer-body{
+        height: 400px;
+        background-position: 70% 0;
+
+        .redes {
+            justify-content: space-evenly;
+            background-color: $color-primario;
+            width: 350px;
+            height: 50px;
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+            align-items: center;
+            margin: 0;
+
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                color: $color-complementario;
+                padding: 0;
+                margin: 0 -6px 0 0;
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+        .enlaces {
+            text-align: left;
+            margin-left: 50px;
+            margin-top: 40px;
+
+            .titulofooter1 {
+                color: $color-complementario;
+                text-shadow: 0 0 5px #000,
+                0 0 5px #000;
+            }
+
+            .enlaces1 {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    color: $color-complementario;
+                    text-shadow: 0 0 5px #000,
+                    0 0 5px #000;
+                }
+            }
+        }
+        
+        .newsletter{
+            .email{
+                width: 40vw;
+                font-size: 16px;
+                margin: $margin-xs;
+            }
+        }
+        .textofooter2{
+            margin-left: -70px;
+            width: 60vw;
+            font-size: 20px;
+        }
+        .textofooter{
+            font-size: 18px;
+            margin-left: -90px;
+        }
+    }
+}
+
+@import "_dramas";
+@import "_foodies";
+@import "_eventos";
+@import "_perfil";
