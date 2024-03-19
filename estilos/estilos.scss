@@ -5,11 +5,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.container-fluid{
+.container-fluid {
     padding: 0;
     margin: 0;
 }
@@ -32,8 +32,7 @@ $texto: 18px;
 // Margenes
 $margin-xs: 2.5vh 0 2.5vh 0;
 $margin-sm: 5vh 0 5vh 0;
-$margin-md: 10vh 0 10vh 0;
-$margin-lg: 15vh 0 15vh 0;
+$margin-md: 15vh 0 15vh 0;
 $margin-banner: 10vh 0 5vh 0;
 $margin-card: 5vh 5vh 5vh 5vh;
 
@@ -46,22 +45,23 @@ $margin-card: 5vh 5vh 5vh 5vh;
     background-image: $bg-header;
 }
 
-.cont-header{
+.cont-header {
     @include contenedor-header(url(../imagenes/mydemonhome.png));
 }
 
-.cont-drama{
+.cont-drama {
     @include contenedor-header(url(../imagenes/kokdu.jpg));
 }
 
-.cont-foodies{
+.cont-foodies {
     @include contenedor-header(url(../imagenes/comidacoreana.jpg));
 }
 
-.cont-eventos{
+.cont-eventos {
     @include contenedor-header(url(../imagenes/kpop3.jpeg));
 }
-.cont-perfil{
+
+.cont-perfil {
     @include contenedor-header(url(../imagenes/chaeunwoo.png));
 }
 
@@ -69,36 +69,36 @@ $margin-card: 5vh 5vh 5vh 5vh;
 .navbar {
     display: flex;
     align-self: center;
-    width: 90%; 
+    width: 90%;
     border-radius: 50px;
     background-color: $color-complementario;
-    margin-top: 15px;
+    margin-top: 3%;
     position: absolute;
     padding-left: 20px;
     transition: background-color 0.5s ease, color 0.5s ease;
 
     .navbar-brand {
-        margin-right: auto; 
+        margin-right: auto;
         padding-left: 50px;
         color: $color-primario !important;
-        font-weight: $font-bold;  
+        font-weight: $font-bold;
         padding: 5px 15px;
         border-radius: 50px;
 
-        &:hover{
+        &:hover {
             background-color: $color-primario;
             color: $color-complementario !important;
         }
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
         margin-right: 30px;
         border-style: none;
     }
 
     .navbar-nav {
 
-        .nav-item{
+        .nav-item {
             padding-left: 20px;
             padding-right: 50px;
 
@@ -107,7 +107,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
                 border-radius: 50px;
                 padding: 5px 15px;
 
-                &:hover{
+                &:hover {
                     background-color: $color-primario;
                     color: $color-complementario !important;
                 }
@@ -118,22 +118,23 @@ $margin-card: 5vh 5vh 5vh 5vh;
 
 
 /* CTA */
-.call{
-    width: 90vw;
+.call {
+    width: 90%;
     height: 500px;
-    margin-left: 40px;
+    margin-left: 10%;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    margin-top: 20vh;
+    margin-top: calc(100% - 70%);
 
-    h1{
+    h1 {
         color: $color-complementario;
         font-weight: $font-bold;
         margin-bottom: -8px;
     }
-    h4{
+
+    h4 {
         color: $color-complementario;
         font-weight: $font-normal;
         line-height: 1.5;
@@ -142,7 +143,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
         width: 80vw;
     }
 
-    .btn1{
+    .btn1 {
         text-decoration: none;
         color: $color-primario;
         background-color: $color-complementario;
@@ -152,7 +153,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
         font-size: 1rem;
         align-self: flex-start;
 
-        &:hover{
+        &:hover {
             background-color: $color-primario;
             color: $color-complementario;
         }
@@ -160,7 +161,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
 }
 
 // Banner
-.banner{
+.banner {
     width: 100%;
     height: auto;
     background-size: cover;
@@ -168,32 +169,35 @@ $margin-card: 5vh 5vh 5vh 5vh;
 }
 
 /* CARD */
-.card{
+.card {
     width: 90%;
     border-style: none;
     margin: $margin-card;
 
-    .card-img{
+    .card-img {
         border-radius: 15px;
     }
-    .card-body{
+
+    .card-body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        img{
+        img {
             margin: $margin-sm
         }
 
-        .card-title{
+        .card-title {
             color: $color-primario;
             font-weight: $font-bold;
             margin-bottom: -8px;
         }
+
         .card-text {
             color: $color-acento;
             margin: $margin-sm;
         }
+
         .btn {
             background-color: $color-acento;
             color: $color-complementario;
@@ -201,26 +205,27 @@ $margin-card: 5vh 5vh 5vh 5vh;
             transition: background-color 0.5s ease, color 0.5s ease;
             font-size: 12px;
             border-style: none;
-            width: 35%;
             margin: $margin-sm;
+            width: 30vw;
 
-            &:hover{
+            &:hover {
                 background-color: $color-primario;
             }
         }
     }
-    .card-video{
+
+    .card-video {
         width: 95%;
         height: 180px;
         display: flex;
         margin: 0 auto;
-        
+
     }
 }
 
 
 /* FOOTER */
-.footer-body{
+.footer-body {
     width: 100%;
     height: 530px;
     background-image: url(../imagenes/fondofooter1.jpg.png);
@@ -233,16 +238,16 @@ $margin-card: 5vh 5vh 5vh 5vh;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
-        margin: $margin-sm; 
+        margin: $margin-sm;
         transition: background-color 0.5s ease, color 0.5s ease;
-        
+
         a {
             text-decoration: none;
             font-size: 25px;
             color: $color-acento;
             padding: 0 20px;
 
-            &:hover{
+            &:hover {
                 color: $color-primario;
             }
         }
@@ -257,20 +262,16 @@ $margin-card: 5vh 5vh 5vh 5vh;
             font-weight: $font-bold;
             margin: $margin-xs;
         }
-        
+
         .enlaces1 {
             display: flex;
             flex-direction: column;
             transition: background-color 0.5s ease, color 0.5s ease;
 
-            a{
+            a {
                 font-size: 16px;
                 text-decoration: none;
                 color: $color-acento;
-
-                &:hover{
-                    color: $color-primario;
-                }
             }
         }
     }
@@ -300,7 +301,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
             color: $color-primario;
             border: solid 2px $color-primario;
         }
-        
+
 
         input::placeholder {
             color: $color-acento;
@@ -318,7 +319,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
             font-weight: 400;
             transition: background-color 0.5s ease, color 0.5s ease;
 
-            &:hover{
+            &:hover {
                 background-color: $color-primario;
                 color: $color-complementario;
             }
@@ -326,7 +327,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
     }
 
     /* Sección copy rights y propietario */
-    .textofooter2 {
+    .textofooter {
         color: $color-primario;
         font-size: 13px;
         font-weight: 400;
@@ -334,13 +335,15 @@ $margin-card: 5vh 5vh 5vh 5vh;
         width: 100%;
         text-align: center;
     }
-    .textofooter {
+
+    .textofooter2 {
         font-family: 'Poppins', sans-serif;
         font-size: 12px;
         padding-bottom: 10px;
         text-align: center;
     }
-    a{
+
+    a {
         text-decoration: underline;
         color: #000000;
         margin-right: 6px;
@@ -349,7 +352,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
 
 // Botón Subir
 
-.subir{
+.subir {
     height: 40px;
     width: 40px;
     background-color: #ffffff7f;
@@ -363,7 +366,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
     border-radius: 50%;
     box-shadow: 0 0 5px 2px #fff;
 
-    &:hover{
+    &:hover {
         background-color: $color-primario;
         color: $color-complementario;
     }
@@ -372,140 +375,156 @@ $margin-card: 5vh 5vh 5vh 5vh;
 
 // Ajustes responsive
 
-@media only screen and (min-width: 578px){
+@media only screen and (min-width: 578px) {
+
     // Header
-    .call{
+    .call {
         margin-top: 12vh;
 
-        h4{
+        h4 {
             width: 45vw;
             margin: $margin-xs;
         }
-    } 
+    }
 
     // Card
-    .card{
-        
-        .card-body{
-            img{
+    .card {
+
+        .card-body {
+            img {
                 margin: $margin-xs;
             }
-            .card-text{
+
+            .card-text {
                 margin: $margin-xs;
             }
-            .btn{
+
+            .btn {
                 margin: $margin-xs;
+                width: 20vw;
             }
-            .card-video{
+
+            .card-video {
                 height: 280px;
             }
         }
-        .card-img-top{
-            margin-bottom: 30px;
     }
-    } 
 
     // Footer
-    .footer-body{
+    .footer-body {
         height: 800px;
 
-        .redes{
+        .redes {
             margin-top: 30px;
-            
-            a{
+
+            a {
                 font-size: 35px;
             }
         }
-        .enlaces{
-            .titulofooter1{
+
+        .enlaces {
+            .titulofooter1 {
                 font-size: 30px;
             }
-            .enlaces1 a{
+
+            .enlaces1 a {
                 font-size: 25px;
             }
         }
-        .newsletter{
-            .titulofooter2{
+
+        .newsletter {
+            .titulofooter2 {
                 font-size: 30px;
                 margin-top: 50px;
             }
-            .email{
+
+            .email {
                 width: 50vw;
                 font-size: 16px;
                 margin: $margin-xs;
             }
-            .buttonfooter{
+
+            .buttonfooter {
                 font-size: 16px;
             }
         }
-        .textofooter2{
+
+        .textofooter {
             font-size: 18px;
         }
-        .textofooter{
+
+        .textofooter2 {
             font-size: 16px;
         }
     }
 
-    .subir{
+    .subir {
         bottom: 200px;
     }
 
 }
 
-@media only screen and (min-width: 768px) { 
-    .cont-header{
+@media only screen and (min-width: 768px) {
+    .cont-header {
         height: 500px;
 
-        .navbar{
-            .navbar-nav{
-                .nav-item{
+        .navbar {
+            .navbar-nav {
+                .nav-item {
                     padding-left: 15px;
                     padding-right: 15px;
                 }
             }
         }
-        
-        .call{
+
+        .call {
             margin-top: 120px;
+
+            h4 {
+                width: 40vw;
+                font-size: 17px;
+                margin: $margin-sm;
+            }
         }
-        h4{
-            width: 40vw;
-            font-size: 17px;
-            margin: $margin-sm;
-        }
-    }    
-    
-    .card{
-        .card-body{
-            img{
+
+    }
+
+    .banner {
+        margin: $margin-md;
+    }
+
+    .card {
+        .card-body {
+            img {
                 width: 100px;
                 height: auto;
             }
-            .card-title{
+
+            .card-title {
                 font-size: $titulos;
             }
-            .card-text{
+
+            .card-text {
                 font-size: $texto;
+                margin: $margin-sm;
             }
-            .btn{
-                font-size: 20px;
-                padding: 10px 10px;
+
+            .btn {
+                font-size: 16px;
+                padding: 5px 5px;
             }
         }
-        .card-img-top{
-            margin-bottom: 30px;
-    }
     }
 
 
-    .footer-body{
+    .footer-body {
         height: 400px;
         background-position: 70% 0;
 
         .redes {
             justify-content: space-evenly;
             background-color: $color-primario;
-            width: 350px;
+            width: auto;
             height: 50px;
             clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
             align-items: center;
@@ -515,9 +534,9 @@ $margin-card: 5vh 5vh 5vh 5vh;
                 text-decoration: none;
                 font-size: 20px;
                 color: $color-complementario;
-                padding: 0;
                 margin: 0 -6px 0 0;
-                width: 80%;
+                padding-left: 0;
+                padding-right: 10px;
                 text-align: center;
             }
         }
@@ -525,12 +544,12 @@ $margin-card: 5vh 5vh 5vh 5vh;
         .enlaces {
             text-align: left;
             margin-left: 50px;
-            margin-top: 40px;
+            margin-top: 60px;
 
             .titulofooter1 {
                 color: $color-complementario;
                 text-shadow: 0 0 5px #000,
-                0 0 5px #000;
+                    0 0 5px #000;
             }
 
             .enlaces1 {
@@ -541,75 +560,89 @@ $margin-card: 5vh 5vh 5vh 5vh;
                     text-decoration: none;
                     color: $color-complementario;
                     text-shadow: 0 0 5px #000,
-                    0 0 5px #000;
+                        0 0 5px #000;
                 }
             }
         }
-        
-        .newsletter{
-            .email{
-                width: 40vw;
-                font-size: 16px;
-                margin: $margin-xs;
+
+        .newsletter {
+            padding-left: 10%;
+
+            form{
+                .email {
+                    width: 40vw;
+                    font-size: 16px;
+                    margin: $margin-xs;
+                }
             }
         }
-        .textofooter2{
-            margin-left: -70px;
-            width: 60vw;
+
+        .textofooter {
             font-size: 20px;
+            margin-top: 70px;
+            margin-bottom: 50px;
+            padding-right: 5%;
         }
-        .textofooter{
+
+        .textofooter2 {
             font-size: 18px;
-            margin-left: -90px;
+            text-align: left;
         }
     }
 }
 
-@media only screen and (min-width: 1200px) { 
-    .cont-header{
+@media only screen and (min-width: 1200px) {
+    .cont-header {
         height: 610px;
 
-        .navbar-collapse{
+        .navbar-collapse {
             justify-content: end;
             margin-right: 50px;
         }
-        
-        .call{
+
+        .call {
             margin-top: 180px;
             margin-left: 7%;
+
+            h4 {
+                width: 35vw;
+                font-size: $subtitulos;
+                margin: $margin-sm;
+            }
         }
-        h4{
-            width: 35vw;
-            font-size: $subtitulos;
-            margin: $margin-md;
-        }
-    }    
-    
-    .banner{
-        margin: $margin-lg;
     }
 
-    .card{
+    .banner {
+        margin: $margin-md;
+    }
 
-        .card-img{
+    .card {
+        .card-img {
             height: 370px;
         }
-        .card-img-top{
-            width: 50%;
-        }
-        .card-body{
-            img{
+
+        .card-body {
+            img {
                 width: 70px;
                 height: auto;
             }
-    }
+
+            .card-text{
+                margin: $margin-xs;
+            }
+
+            .btn {
+                width: 10vw;
+                margin: 0;
+            }
+        }
     }
 
-    .subir{
+    .subir {
         bottom: 40px;
     }
 
-    .footer-body{
+    .footer-body {
         height: 400px;
         background-position: 70% 0;
 
@@ -621,27 +654,17 @@ $margin-card: 5vh 5vh 5vh 5vh;
             clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
             align-items: center;
             margin: 0;
-
-            a {
-                text-decoration: none;
-                font-size: 20px;
-                color: $color-complementario;
-                padding: 0;
-                margin: 0 -6px 0 0;
-                width: 80%;
-                text-align: center;
-            }
         }
 
         .enlaces {
             text-align: left;
             margin-left: 50px;
-            margin-top: 40px;
+            margin-top: 70px;
 
             .titulofooter1 {
                 color: $color-complementario;
                 text-shadow: 0 0 5px #000,
-                0 0 5px #000;
+                    0 0 5px #000;
             }
 
             .enlaces1 {
@@ -651,27 +674,41 @@ $margin-card: 5vh 5vh 5vh 5vh;
                 a {
                     text-decoration: none;
                     color: $color-complementario;
-                    text-shadow: 0 0 5px #000,
-                    0 0 5px #000;
+                    text-shadow: 0 0 5px #000000,
+                        0 0 5px #000000;
+
+                    &:hover{
+                        color: $color-primario;
+                        text-shadow: 0 0 5px #ffffff,
+                        0 0 5px #ffffff;
+                        font-weight: $font-bold;
+                    }
                 }
             }
         }
-        
-        .newsletter{
-            .email{
-                width: 40vw;
-                font-size: 16px;
-                margin: $margin-xs;
+
+        .newsletter {
+            margin-left: 5%;
+
+            form{
+                .email {
+                    width: 30vw;
+                    font-size: 16px;
+                    margin: $margin-sm;
+                }
             }
         }
-        .textofooter2{
-            margin-left: -70px;
-            width: 60vw;
+
+        .textofooter {
             font-size: 20px;
+            margin-top: 70px;
+            margin-bottom: 50px;
         }
-        .textofooter{
+
+        .textofooter2 {
             font-size: 18px;
-            margin-left: -90px;
+            padding-right: 10%;
+            text-align: center;
         }
     }
 }

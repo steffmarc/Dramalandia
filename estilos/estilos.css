@@ -61,7 +61,7 @@ html {
   width: 90%;
   border-radius: 50px;
   background-color: #fffff2;
-  margin-top: 15px;
+  margin-top: 3%;
   position: absolute;
   padding-left: 20px;
   transition: background-color 0.5s ease, color 0.5s ease;
@@ -98,14 +98,14 @@ html {
 
 /* CTA */
 .call {
-  width: 90vw;
+  width: 90%;
   height: 500px;
-  margin-left: 40px;
+  margin-left: 10%;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-content: flex-start;
-  margin-top: 20vh;
+  margin-top: 30%;
 }
 .call h1 {
   color: #fffff2;
@@ -175,8 +175,8 @@ html {
   transition: background-color 0.5s ease, color 0.5s ease;
   font-size: 12px;
   border-style: none;
-  width: 35%;
   margin: 5vh 0 5vh 0;
+  width: 30vw;
 }
 .card .card-body .btn:hover {
   background-color: #800020;
@@ -235,9 +235,6 @@ html {
   text-decoration: none;
   color: #5E6472;
 }
-.footer-body .enlaces .enlaces1 a:hover {
-  color: #800020;
-}
 .footer-body .newsletter {
   display: flex;
   flex-direction: column;
@@ -280,7 +277,7 @@ html {
   background-color: #800020;
   color: #fffff2;
 }
-.footer-body .textofooter2 {
+.footer-body .textofooter {
   color: #800020;
   font-size: 13px;
   font-weight: 400;
@@ -288,7 +285,7 @@ html {
   width: 100%;
   text-align: center;
 }
-.footer-body .textofooter {
+.footer-body .textofooter2 {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   padding-bottom: 10px;
@@ -335,12 +332,10 @@ html {
   }
   .card .card-body .btn {
     margin: 2.5vh 0 2.5vh 0;
+    width: 20vw;
   }
   .card .card-body .card-video {
     height: 280px;
-  }
-  .card .card-img-top {
-    margin-bottom: 30px;
   }
   .footer-body {
     height: 800px;
@@ -369,10 +364,10 @@ html {
   .footer-body .newsletter .buttonfooter {
     font-size: 16px;
   }
-  .footer-body .textofooter2 {
+  .footer-body .textofooter {
     font-size: 18px;
   }
-  .footer-body .textofooter {
+  .footer-body .textofooter2 {
     font-size: 16px;
   }
   .subir {
@@ -390,10 +385,13 @@ html {
   .cont-header .call {
     margin-top: 120px;
   }
-  .cont-header h4 {
+  .cont-header .call h4 {
     width: 40vw;
     font-size: 17px;
     margin: 5vh 0 5vh 0;
+  }
+  .banner {
+    margin: 15vh 0 15vh 0;
   }
   .card .card-body img {
     width: 100px;
@@ -404,13 +402,11 @@ html {
   }
   .card .card-body .card-text {
     font-size: 18px;
+    margin: 5vh 0 5vh 0;
   }
   .card .card-body .btn {
-    font-size: 20px;
-    padding: 10px 10px;
-  }
-  .card .card-img-top {
-    margin-bottom: 30px;
+    font-size: 16px;
+    padding: 5px 5px;
   }
   .footer-body {
     height: 400px;
@@ -419,7 +415,7 @@ html {
   .footer-body .redes {
     justify-content: space-evenly;
     background-color: #800020;
-    width: 350px;
+    width: auto;
     height: 50px;
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     align-items: center;
@@ -429,15 +425,15 @@ html {
     text-decoration: none;
     font-size: 20px;
     color: #fffff2;
-    padding: 0;
     margin: 0 -6px 0 0;
-    width: 80%;
+    padding-left: 0;
+    padding-right: 10px;
     text-align: center;
   }
   .footer-body .enlaces {
     text-align: left;
     margin-left: 50px;
-    margin-top: 40px;
+    margin-top: 60px;
   }
   .footer-body .enlaces .titulofooter1 {
     color: #fffff2;
@@ -452,19 +448,23 @@ html {
     color: #fffff2;
     text-shadow: 0 0 5px #000, 0 0 5px #000;
   }
-  .footer-body .newsletter .email {
+  .footer-body .newsletter {
+    padding-left: 10%;
+  }
+  .footer-body .newsletter form .email {
     width: 40vw;
     font-size: 16px;
     margin: 2.5vh 0 2.5vh 0;
   }
-  .footer-body .textofooter2 {
-    margin-left: -70px;
-    width: 60vw;
-    font-size: 20px;
-  }
   .footer-body .textofooter {
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding-right: 5%;
+  }
+  .footer-body .textofooter2 {
     font-size: 18px;
-    margin-left: -90px;
+    text-align: left;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -479,10 +479,10 @@ html {
     margin-top: 180px;
     margin-left: 7%;
   }
-  .cont-header h4 {
+  .cont-header .call h4 {
     width: 35vw;
     font-size: 25px;
-    margin: 10vh 0 10vh 0;
+    margin: 5vh 0 5vh 0;
   }
   .banner {
     margin: 15vh 0 15vh 0;
@@ -490,12 +490,16 @@ html {
   .card .card-img {
     height: 370px;
   }
-  .card .card-img-top {
-    width: 50%;
-  }
   .card .card-body img {
     width: 70px;
     height: auto;
+  }
+  .card .card-body .card-text {
+    margin: 2.5vh 0 2.5vh 0;
+  }
+  .card .card-body .btn {
+    width: 10vw;
+    margin: 0;
   }
   .subir {
     bottom: 40px;
@@ -513,19 +517,10 @@ html {
     align-items: center;
     margin: 0;
   }
-  .footer-body .redes a {
-    text-decoration: none;
-    font-size: 20px;
-    color: #fffff2;
-    padding: 0;
-    margin: 0 -6px 0 0;
-    width: 80%;
-    text-align: center;
-  }
   .footer-body .enlaces {
     text-align: left;
     margin-left: 50px;
-    margin-top: 40px;
+    margin-top: 70px;
   }
   .footer-body .enlaces .titulofooter1 {
     color: #fffff2;
@@ -538,21 +533,30 @@ html {
   .footer-body .enlaces .enlaces1 a {
     text-decoration: none;
     color: #fffff2;
-    text-shadow: 0 0 5px #000, 0 0 5px #000;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000;
   }
-  .footer-body .newsletter .email {
-    width: 40vw;
+  .footer-body .enlaces .enlaces1 a:hover {
+    color: #800020;
+    text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff;
+    font-weight: bold;
+  }
+  .footer-body .newsletter {
+    margin-left: 5%;
+  }
+  .footer-body .newsletter form .email {
+    width: 30vw;
     font-size: 16px;
-    margin: 2.5vh 0 2.5vh 0;
-  }
-  .footer-body .textofooter2 {
-    margin-left: -70px;
-    width: 60vw;
-    font-size: 20px;
+    margin: 5vh 0 5vh 0;
   }
   .footer-body .textofooter {
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .footer-body .textofooter2 {
     font-size: 18px;
-    margin-left: -90px;
+    padding-right: 10%;
+    text-align: center;
   }
 }
 .filtros {
