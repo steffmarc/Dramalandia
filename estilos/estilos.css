@@ -726,31 +726,12 @@ iframe {
     height: 450px;
   }
 }
-/* Contenedor principal Eventos */
-.contenedoreventos {
-  height: auto;
-  width: 100%;
-  background-color: #fff;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(7, auto);
-  grid-template-areas: "portadaeventos portadaeventos" "concurso concurso" "imgfestival imgfestival" "festival festival" "imgtaller imgtaller" "taller taller" "mas mas";
-}
-
 /* Banner principal Eventos */
-.portadaeventos {
-  grid-area: portadaeventos;
-  background-image: url(../imagenes/kpop3.jpeg);
-  height: 700px;
-  justify-content: center;
-}
-
 .concurso {
   grid-area: concurso;
   margin: 50px;
 }
-
-.textoeventos {
+.concurso .textoeventos {
   margin-top: 20px;
   margin-bottom: 100px;
   color: #5E6472;
@@ -759,34 +740,9 @@ iframe {
   row-gap: 10px;
 }
 
-.imgfestival {
-  grid-area: imgfestival;
-  background-image: url(../imagenes/festivalhansik.png);
-  width: 618px;
-  height: 384px;
-  margin: 0 auto;
-  background-size: cover;
-  margin-bottom: 50px;
-}
-
-.festival {
-  grid-area: festival;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.imgtaller {
-  grid-area: imgtaller;
-  background-image: url(../imagenes/tallervestimenta.png);
-  width: 618px;
-  height: 384px;
-  margin: 0 auto;
-  background-size: cover;
-  margin-bottom: 50px;
-}
-
-.taller {
-  grid-area: taller;
+.btn-vermas {
+  color: #800020;
+  font-weight: bold;
 }
 
 h2 {
