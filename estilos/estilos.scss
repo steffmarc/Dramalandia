@@ -43,6 +43,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
     background-size: cover;
     height: 430px;
     background-image: $bg-header;
+    margin-bottom: 50px
 }
 
 .cont-header {
@@ -176,6 +177,10 @@ $margin-card: 5vh 5vh 5vh 5vh;
 
     .card-img {
         border-radius: 15px;
+    }
+
+    .img-eventos{
+        width: 90%;
     }
 
     .card-body {
@@ -486,7 +491,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
     }
 
     .banner {
-        margin: $margin-md;
+        margin: $margin-sm;
     }
 
     .card {
@@ -575,8 +580,8 @@ $margin-card: 5vh 5vh 5vh 5vh;
 
         .textofooter {
             font-size: 20px;
-            margin-top: 70px;
-            margin-bottom: 50px;
+            margin-top: 50px;
+            margin-bottom: 30px;
             padding-right: 5%;
         }
 

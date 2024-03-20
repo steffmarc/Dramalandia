@@ -20,6 +20,7 @@ html {
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/mydemonhome.png);
+  margin-bottom: 50px;
 }
 
 .cont-drama {
@@ -28,6 +29,7 @@ html {
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/kokdu.jpg);
+  margin-bottom: 50px;
 }
 
 .cont-foodies {
@@ -36,6 +38,7 @@ html {
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/comidacoreana.jpg);
+  margin-bottom: 50px;
 }
 
 .cont-eventos {
@@ -44,6 +47,7 @@ html {
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/kpop3.jpeg);
+  margin-bottom: 50px;
 }
 
 .cont-perfil {
@@ -52,6 +56,7 @@ html {
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/chaeunwoo.png);
+  margin-bottom: 50px;
 }
 
 /* NAV */
@@ -150,6 +155,9 @@ html {
 }
 .card .card-img {
   border-radius: 15px;
+}
+.card .img-eventos {
+  width: 90%;
 }
 .card .card-body {
   display: flex;
@@ -392,7 +400,7 @@ html {
     margin: 5vh 0 5vh 0;
   }
   .banner {
-    margin: 15vh 0 15vh 0;
+    margin: 5vh 0 5vh 0;
   }
   .card .card-body img {
     width: 100px;
@@ -459,8 +467,8 @@ html {
   }
   .footer-body .textofooter {
     font-size: 20px;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     padding-right: 5%;
   }
   .footer-body .textofooter2 {
@@ -745,6 +753,19 @@ iframe {
   font-weight: bold;
 }
 
+@media only screen and (min-width: 768px) {
+  .card .img-eventos {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card .img-eventos {
+    width: 50%;
+  }
+}
 h2 {
   color: #800020;
   font-weight: bold;
