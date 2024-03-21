@@ -923,6 +923,7 @@ iframe {
   .banner-fav-drama, .banner-fav-eventos, .banner-fav-foodies {
     height: 260px;
     margin-bottom: 50px;
+    margin-top: 100px;
   }
   .banner-fav-drama h2, .banner-fav-eventos h2, .banner-fav-foodies h2 {
     font-size: 50px;
@@ -949,7 +950,6 @@ iframe {
   }
   .banner-fav-drama, .banner-fav-eventos, .banner-fav-foodies {
     height: 400px;
-    margin-bottom: 50px;
   }
   .banner-fav-drama h2, .banner-fav-eventos h2, .banner-fav-foodies h2 {
     font-size: 80px;
