@@ -71,6 +71,9 @@ html {
   padding-left: 20px;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
+.navbar .logo {
+  width: 100%;
+}
 .navbar .navbar-brand {
   margin-right: auto;
   padding-left: 50px;
@@ -78,10 +81,7 @@ html {
   font-weight: bold;
   padding: 5px 15px;
   border-radius: 50px;
-}
-.navbar .navbar-brand:hover {
-  background-color: #800020;
-  color: #fffff2 !important;
+  width: 50%;
 }
 .navbar .navbar-toggler {
   margin-right: 30px;
@@ -326,8 +326,11 @@ html {
 }
 
 @media only screen and (min-width: 578px) {
+  .navbar .navbar-brand {
+    width: 40%;
+  }
   .call {
-    margin-top: 12vh;
+    margin-top: 20vh;
   }
   .call h4 {
     width: 45vw;
@@ -386,6 +389,9 @@ html {
 @media only screen and (min-width: 768px) {
   .cont-header, .cont-drama, .cont-foodies, .cont-eventos, .cont-perfil {
     height: 500px;
+  }
+  .cont-header .navbar .navbar-brand, .cont-drama .navbar .navbar-brand, .cont-foodies .navbar .navbar-brand, .cont-eventos .navbar .navbar-brand, .cont-perfil .navbar .navbar-brand {
+    width: 35%;
   }
   .cont-header .navbar .navbar-nav .nav-item, .cont-drama .navbar .navbar-nav .nav-item, .cont-foodies .navbar .navbar-nav .nav-item, .cont-eventos .navbar .navbar-nav .nav-item, .cont-perfil .navbar .navbar-nav .nav-item {
     padding-left: 15px;
@@ -480,7 +486,10 @@ html {
   .cont-header, .cont-drama, .cont-foodies, .cont-eventos, .cont-perfil {
     height: 710px;
   }
-  .cont-header .navbar-collapse, .cont-drama .navbar-collapse, .cont-foodies .navbar-collapse, .cont-eventos .navbar-collapse, .cont-perfil .navbar-collapse {
+  .cont-header .navbar .navbar-brand, .cont-drama .navbar .navbar-brand, .cont-foodies .navbar .navbar-brand, .cont-eventos .navbar .navbar-brand, .cont-perfil .navbar .navbar-brand {
+    width: 20%;
+  }
+  .cont-header .navbar .navbar-collapse, .cont-drama .navbar .navbar-collapse, .cont-foodies .navbar .navbar-collapse, .cont-eventos .navbar .navbar-collapse, .cont-perfil .navbar .navbar-collapse {
     justify-content: end;
     margin-right: 50px;
   }

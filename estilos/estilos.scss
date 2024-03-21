@@ -78,6 +78,9 @@ $margin-card: 5vh 5vh 5vh 5vh;
     padding-left: 20px;
     transition: background-color 0.5s ease, color 0.5s ease;
 
+    .logo{
+        width: 100%;
+    }
     .navbar-brand {
         margin-right: auto;
         padding-left: 50px;
@@ -85,11 +88,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
         font-weight: $font-bold;
         padding: 5px 15px;
         border-radius: 50px;
-
-        &:hover {
-            background-color: $color-primario;
-            color: $color-complementario !important;
-        }
+        width: 50%;
     }
 
     .navbar-toggler {
@@ -382,8 +381,14 @@ $margin-card: 5vh 5vh 5vh 5vh;
 // Ajustes responsive
 
 @media only screen and (min-width: 578px) {
+.navbar{
+    .navbar-brand{
+        width: 40%;
+    }
+}
+
     .call {
-        margin-top: 12vh;
+        margin-top: 20vh;
 
         h4 {
             width: 45vw;
@@ -471,6 +476,9 @@ $margin-card: 5vh 5vh 5vh 5vh;
         height: 500px;
 
         .navbar {
+            .navbar-brand{
+                width: 35%;
+            }
             .navbar-nav {
                 .nav-item {
                     padding-left: 15px;
@@ -595,11 +603,17 @@ $margin-card: 5vh 5vh 5vh 5vh;
 @media only screen and (min-width: 1200px) {
     .cont-header, .cont-drama, .cont-foodies, .cont-eventos, .cont-perfil {
         height: 710px;
-
-        .navbar-collapse {
-            justify-content: end;
-            margin-right: 50px;
+        
+        .navbar{
+            .navbar-brand{
+                width: 20%;
+            }
+            .navbar-collapse {
+                justify-content: end;
+                margin-right: 50px;
+            }
         }
+        
 
         .call {
             margin-top: 180px;
