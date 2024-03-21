@@ -70,6 +70,11 @@
 }
 
 .card-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 70px;
+
     .text-fav{
         color: $color-primario;
         font-weight: $font-bold;
