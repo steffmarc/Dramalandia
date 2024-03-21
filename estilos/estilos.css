@@ -478,7 +478,7 @@ html {
 }
 @media only screen and (min-width: 1200px) {
   .cont-header, .cont-drama, .cont-foodies, .cont-eventos, .cont-perfil {
-    height: 610px;
+    height: 710px;
   }
   .cont-header .navbar-collapse, .cont-drama .navbar-collapse, .cont-foodies .navbar-collapse, .cont-eventos .navbar-collapse, .cont-perfil .navbar-collapse {
     justify-content: end;
@@ -766,62 +766,13 @@ iframe {
     width: 50%;
   }
 }
-h2 {
-  color: #800020;
-  font-weight: bold;
-  margin-top: 50px;
-  font-size: 40px;
-  margin-bottom: -50px;
-}
-
-.sub-fav {
-  color: #fffff2;
-  background-color: #800020;
-  display: flex;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 20px;
-  margin-top: 100px;
-}
-
-.img-fav {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.text-fav {
-  color: #800020;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-left: 20px;
-}
-
-.ver-receta {
-  color: #5E6472;
-  margin-left: 20px;
-}
-
-.ver-receta:hover {
-  color: #800020;
-}
-
-/* Banner principal Perfil */
-.portadaperfil {
-  grid-area: portadaeventos;
-  background-image: url(../imagenes/chaeunwoo.png);
-  height: 700px;
-  justify-content: center;
-}
-
 /* Botón subir o cambiar imágenes */
 .boton-upload {
   position: absolute;
-  bottom: 0px;
+  bottom: 100px;
   right: 10px;
-  padding: 10px 15px;
+  padding: 5px 15px;
+  font-size: 14px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   border-radius: 50px;
@@ -829,18 +780,171 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .boton-upload:hover {
   background-color: #fffff2;
   color: #800020;
 }
 
-#file-upload {
-  display: none;
+.banner-fav {
+  background-image: url(../imagenes/Bannerfavoritos.png);
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+.banner-fav h2 {
+  color: #fffff2;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  align-self: center;
+  text-shadow: 0 0 15px #000;
+}
+.banner-fav h2 {
+  font-size: 50px;
 }
 
-.boton-submit {
-  margin-top: 10px;
+.banner-fav-drama {
+  background-image: url(../imagenes/bannerdramas.png);
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  margin-bottom: 30px;
+  background-position: 0 25%;
+}
+.banner-fav-drama h2 {
+  color: #fffff2;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  align-self: center;
+  text-shadow: 0 0 15px #000;
+}
+.banner-fav-drama h2 {
+  font-size: 50px;
+}
+
+.banner-fav-foodies {
+  background-image: url(../imagenes/bannerfoodies.avif);
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  margin-bottom: 30px;
+  background-position: 0 50%;
+}
+.banner-fav-foodies h2 {
+  color: #fffff2;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  align-self: center;
+  text-shadow: 0 0 15px #000;
+}
+.banner-fav-foodies h2 {
+  font-size: 50px;
+}
+
+.banner-fav-eventos {
+  background-image: url(../imagenes/bannereventos.webp);
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  margin-bottom: 30px;
+  background-position: 0 75%;
+}
+.banner-fav-eventos h2 {
+  color: #fffff2;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  align-self: center;
+  text-shadow: 0 0 15px #000;
+}
+.banner-fav-eventos h2 {
+  font-size: 50px;
+}
+
+.card .text-fav {
+  color: #800020;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.card .img-fav {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.card .symbols {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 0 0 0 20px;
+}
+.card .ver-receta {
+  color: #5E6472;
+  margin-left: 20px;
+}
+.card .ver-receta:hover {
+  color: #800020;
+}
+
+@media only screen and (min-width: 578px) {
+  .boton-upload {
+    bottom: 620px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .boton-upload {
+    bottom: 560px;
+  }
+  .banner-fav {
+    height: 260px;
+  }
+  .banner-fav h2 {
+    font-size: 60px;
+  }
+  .banner-fav-drama, .banner-fav-eventos, .banner-fav-foodies {
+    height: 260px;
+    margin-bottom: 50px;
+  }
+  .banner-fav-drama h2, .banner-fav-eventos h2, .banner-fav-foodies h2 {
+    font-size: 50px;
+  }
+  .card {
+    width: 50%;
+    height: auto;
+    margin: 0 0 100px 0;
+  }
+  .card .text-fav {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .boton-upload {
+    bottom: -110px;
+  }
+  .banner-fav {
+    height: 400px;
+    margin: 15vh 0 15vh 0;
+  }
+  .banner-fav h2 {
+    font-size: 150px;
+  }
+  .banner-fav-drama, .banner-fav-eventos, .banner-fav-foodies {
+    height: 400px;
+    margin-bottom: 50px;
+  }
+  .banner-fav-drama h2, .banner-fav-eventos h2, .banner-fav-foodies h2 {
+    font-size: 80px;
+  }
+  .card {
+    width: 25%;
+  }
+  .card .text-fav {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
