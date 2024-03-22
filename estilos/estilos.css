@@ -814,7 +814,7 @@ iframe {
 }
 
 .banner-fav-drama {
-  background-image: url(../imagenes/bannerdramas.png);
+  background-image: url(../imagenes/bannerdramas.avif);
   width: 100%;
   height: 160px;
   background-size: cover;
@@ -834,7 +834,7 @@ iframe {
 }
 
 .banner-fav-foodies {
-  background-image: url(../imagenes/bannerfoodies.avif);
+  background-image: url(../imagenes/bannerfoodies.jpg);
   width: 100%;
   height: 160px;
   background-size: cover;

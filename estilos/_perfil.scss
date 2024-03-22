@@ -43,7 +43,7 @@
 }
 
 .banner-fav-drama {
-    @include banner-perfil(url(../imagenes/bannerdramas.png));
+    @include banner-perfil(url(../imagenes/bannerdramas.avif));
     margin-bottom: 30px;
     background-position: 0 25%;
     h2{
@@ -52,7 +52,7 @@
 }
 
 .banner-fav-foodies {
-    @include banner-perfil(url(../imagenes/bannerfoodies.avif));
+    @include banner-perfil(url(../imagenes/bannerfoodies.jpg));
     margin-bottom: 30px;
     background-position: 0 50%;
     h2{
