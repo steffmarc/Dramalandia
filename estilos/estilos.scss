@@ -159,6 +159,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
         border-radius: 50px;
         font-size: 1rem;
         align-self: flex-start;
+        transition: background-color 0.5s ease, color 0.5s ease;
 
         &:hover {
             background-color: $color-primario;
@@ -227,10 +228,10 @@ $margin-card: 5vh 5vh 5vh 5vh;
 
     .card-video {
         width: 95%;
-        height: 170px;
+        height: 150px;
         display: flex;
         margin: 0 auto;
-        border-radius: 30px;
+        border-radius: 10px;
 
     }
 }
@@ -370,7 +371,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
     background-color: #ffffff7f;
     color: $color-acento;
     position: fixed;
-    bottom: 100px;
+    bottom: 40px;
     right: 40px;
     text-align: center;
     line-height: 40px;
@@ -469,10 +470,6 @@ $margin-card: 5vh 5vh 5vh 5vh;
         .textofooter2 {
             font-size: 16px;
         }
-    }
-
-    .subir {
-        bottom: 200px;
     }
 
 }
@@ -657,10 +654,6 @@ $margin-card: 5vh 5vh 5vh 5vh;
                 margin: 0;
             }
         }
-    }
-
-    .subir {
-        bottom: 40px;
     }
 
     .footer-body {

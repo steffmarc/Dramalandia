@@ -63,6 +63,11 @@ iframe {
 }
 
 @media only screen and (min-width: 578px) {
+
+    .filtros{
+        margin-left: 1rem;
+    }
+
     .btn2 {
         font-size: 16px;
     }
@@ -87,19 +92,18 @@ iframe {
             height: 350px;
         }
     }
+
+    .filtros {
+        justify-content: space-evenly;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .card {
         .card-video {
-            height: 310px;
+            height: 270px;
+            border-radius: 20px;
         }
     }
 
-    .filtros {
-        overflow-x: visible;
-        width: 100%;
-        justify-content: space-around;
-        gap: 80px;
-    }
 }
