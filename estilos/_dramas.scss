@@ -1,10 +1,12 @@
 .filtros {
-    width: 80%;
-    margin: $margin-card;
+    padding: 2rem;
+    width: 100%;
     display: flex;
-    overflow-x: hidden;
-    justify-content: flex-start;
+    overflow: scroll;
     gap: 15px;
+}
+.filtros::-webkit-scrollbar{
+    display: none;
 }
 
 @mixin boton($bg-color, $font-color: #fffff2) {
@@ -66,10 +68,6 @@ iframe {
         }
     }
 
-    .filtros {
-        gap: 34px;
-    }
-
     .btn2 {
         font-size: 16px;
     }
@@ -95,18 +93,6 @@ iframe {
         }
     }
 
-    .filtros {
-        gap: 50px;
-    }
-
-    .btn2 {
-        font-size: 20px;
-    }
-
-    .btn3 {
-        font-size: 20px;
-    }
-
     .card {
         .card-video {
             height: 350px;
@@ -124,8 +110,7 @@ iframe {
     .filtros{
         overflow-x: visible;
         width: 100%;
-        justify-content: center;
+        justify-content: space-around;
         gap: 80px;
-        margin: 50px 0 80px -30px;
     }
 }

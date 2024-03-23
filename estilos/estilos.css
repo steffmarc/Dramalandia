@@ -4,8 +4,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
-html {
+* .row {
+  margin: 0;
+}
+* html {
   scroll-behavior: smooth;
 }
 
@@ -20,7 +22,6 @@ html {
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/mydemonhome.png);
-  margin-bottom: 50px;
 }
 
 .cont-drama {
@@ -29,7 +30,6 @@ html {
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/kokdu.jpg);
-  margin-bottom: 50px;
 }
 
 .cont-foodies {
@@ -38,7 +38,6 @@ html {
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/comidacoreana.jpg);
-  margin-bottom: 50px;
 }
 
 .cont-eventos {
@@ -47,7 +46,6 @@ html {
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/kpop3.jpeg);
-  margin-bottom: 50px;
 }
 
 .cont-perfil {
@@ -56,7 +54,6 @@ html {
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/chaeunwoo.png);
-  margin-bottom: 50px;
 }
 
 /* NAV */
@@ -144,7 +141,7 @@ html {
   width: 100%;
   height: auto;
   background-size: cover;
-  margin: 5vh 0 5vh 0;
+  margin: 10vh 0 5vh 0;
 }
 
 /* CARD */
@@ -578,12 +575,15 @@ html {
   }
 }
 .filtros {
-  width: 80%;
-  margin: 5vh 5vh 5vh 5vh;
+  padding: 2rem;
+  width: 100%;
   display: flex;
-  overflow-x: hidden;
-  justify-content: flex-start;
+  overflow: scroll;
   gap: 15px;
+}
+
+.filtros::-webkit-scrollbar {
+  display: none;
 }
 
 .btn2 {
@@ -636,9 +636,6 @@ iframe {
   .call h4 {
     width: 40vw;
   }
-  .filtros {
-    gap: 34px;
-  }
   .btn2 {
     font-size: 16px;
   }
@@ -657,15 +654,6 @@ iframe {
   .call h4 {
     width: 30vw;
   }
-  .filtros {
-    gap: 50px;
-  }
-  .btn2 {
-    font-size: 20px;
-  }
-  .btn3 {
-    font-size: 20px;
-  }
   .card .card-video {
     height: 350px;
   }
@@ -677,9 +665,8 @@ iframe {
   .filtros {
     overflow-x: visible;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     gap: 80px;
-    margin: 50px 0 80px -30px;
   }
 }
 .h4-foodie {
@@ -796,10 +783,10 @@ iframe {
 
 .banner-fav {
   background-image: url(../imagenes/Bannerfavoritos.png);
-  width: 100%;
   height: 160px;
   background-size: cover;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 .banner-fav h2 {
   color: #fffff2;
@@ -815,7 +802,6 @@ iframe {
 
 .banner-fav-drama {
   background-image: url(../imagenes/bannerdramas.avif);
-  width: 100%;
   height: 160px;
   background-size: cover;
   margin-bottom: 30px;
@@ -835,7 +821,6 @@ iframe {
 
 .banner-fav-foodies {
   background-image: url(../imagenes/bannerfoodies.jpg);
-  width: 100%;
   height: 160px;
   background-size: cover;
   margin-bottom: 30px;
@@ -855,7 +840,6 @@ iframe {
 
 .banner-fav-eventos {
   background-image: url(../imagenes/bannereventos.webp);
-  width: 100%;
   height: 160px;
   background-size: cover;
   margin-bottom: 30px;
@@ -891,11 +875,15 @@ iframe {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.card-2 .symbols-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
 .card-2 .symbols {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  margin: 0 0 0 20px;
 }
 .card-2 .ver-receta {
   color: #5E6472;
@@ -920,12 +908,16 @@ iframe {
   .banner-fav h2 {
     font-size: 60px;
   }
-  .banner-fav-drama, .banner-fav-eventos, .banner-fav-foodies {
+  .banner-fav-drama,
+  .banner-fav-eventos,
+  .banner-fav-foodies {
     height: 260px;
     margin-bottom: 50px;
     margin-top: 100px;
   }
-  .banner-fav-drama h2, .banner-fav-eventos h2, .banner-fav-foodies h2 {
+  .banner-fav-drama h2,
+  .banner-fav-eventos h2,
+  .banner-fav-foodies h2 {
     font-size: 50px;
   }
   .card-2 {
@@ -948,10 +940,14 @@ iframe {
   .banner-fav h2 {
     font-size: 150px;
   }
-  .banner-fav-drama, .banner-fav-eventos, .banner-fav-foodies {
+  .banner-fav-drama,
+  .banner-fav-eventos,
+  .banner-fav-foodies {
     height: 400px;
   }
-  .banner-fav-drama h2, .banner-fav-eventos h2, .banner-fav-foodies h2 {
+  .banner-fav-drama h2,
+  .banner-fav-eventos h2,
+  .banner-fav-foodies h2 {
     font-size: 80px;
   }
   .card-2 {

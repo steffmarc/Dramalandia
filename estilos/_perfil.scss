@@ -5,26 +5,25 @@
     right: 10px;
     padding: 5px 15px;
     font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.5);
     border: none;
     border-radius: 50px;
     color: #000;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; 
+    transition: background-color 0.3s ease, color 0.3s ease;
 
-    &:hover{
-        background-color: $color-complementario; 
-    color: $color-primario;
+    &:hover {
+        background-color: $color-complementario;
+        color: $color-primario;
     }
 }
 
 @mixin banner-perfil($bg-banfav) {
     background-image: $bg-banfav;
-    width: 100%;
     height: 160px;
     background-size: cover;
 
-    h2{
+    h2 {
         color: $color-complementario;
         font-weight: $font-bold;
         text-align: center;
@@ -37,7 +36,9 @@
 .banner-fav {
     @include banner-perfil(url(../imagenes/Bannerfavoritos.png));
     margin-bottom: 50px;
-    h2{
+    margin-top: 50px;
+
+    h2 {
         font-size: 50px
     }
 }
@@ -46,7 +47,8 @@
     @include banner-perfil(url(../imagenes/bannerdramas.avif));
     margin-bottom: 30px;
     background-position: 0 25%;
-    h2{
+
+    h2 {
         font-size: 50px
     }
 }
@@ -55,7 +57,8 @@
     @include banner-perfil(url(../imagenes/bannerfoodies.jpg));
     margin-bottom: 30px;
     background-position: 0 50%;
-    h2{
+
+    h2 {
         font-size: 50px
     }
 }
@@ -64,108 +67,126 @@
     @include banner-perfil(url(../imagenes/bannereventos.webp));
     margin-bottom: 30px;
     background-position: 0 75%;
-    h2{
+
+    h2 {
         font-size: 50px
     }
 }
 
-.card-2{
+.card-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 70px;
 
-    .text-fav{
+    .text-fav {
         color: $color-primario;
         font-weight: $font-bold;
         margin-left: 10px;
     }
-    .img-fav{
+
+    .img-fav {
         width: 100%;
         height: auto;
         border-radius: 20px;
         margin-top: 15px;
         margin-bottom: 15px;
     }
+
+    .symbols-container {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
     .symbols {
         width: 40px;
         height: 40px;
         border-radius: 50px;
-        margin: 0 0 0 20px;
     }
-    .ver-receta{
+
+    .ver-receta {
         color: $color-acento;
         margin-left: 20px;
 
-        &:hover{
+        &:hover {
             color: $color-primario;
         }
     }
 }
 
 @media only screen and (min-width: 578px) {
-    .boton-upload{
+    .boton-upload {
         bottom: 620px;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .boton-upload{
+    .boton-upload {
         bottom: 560px;
     }
+
     .banner-fav {
         height: 260px;
-        h2{
+
+        h2 {
             font-size: 60px;
         }
     }
-    .banner-fav-drama, .banner-fav-eventos, .banner-fav-foodies{
+
+    .banner-fav-drama,
+    .banner-fav-eventos,
+    .banner-fav-foodies {
         height: 260px;
         margin-bottom: 50px;
         margin-top: 100px;
 
-        h2{
+        h2 {
             font-size: 50px;
         }
     }
 
-    .card-2{
+    .card-2 {
         width: 50%;
         height: auto;
         margin: 0 0 100px 0;
-    
-        
-        .text-fav{
+
+
+        .text-fav {
             font-size: 30px;
         }
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    .boton-upload{
+    .boton-upload {
         bottom: -110px;
     }
+
     .banner-fav {
         height: 400px;
         margin: $margin-md;
 
-        h2{
+        h2 {
             font-size: 150px;
         }
     }
-    .banner-fav-drama, .banner-fav-eventos, .banner-fav-foodies{
+
+    .banner-fav-drama,
+    .banner-fav-eventos,
+    .banner-fav-foodies {
         height: 400px;
 
-        h2{
+        h2 {
             font-size: 80px;
         }
     }
 
-    .card-2{
+    .card-2 {
         width: 25%;
-    
-        
-        .text-fav{
+
+
+        .text-fav {
             font-size: 25px;
         }
     }
