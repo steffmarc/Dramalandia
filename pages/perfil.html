@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="¡Descubrí Dramalandia! Tu perfil personalizado con tus dramas, eventos y comidas favoritas">
-    <meta name="keywords" content="dramalandia, perfil personalizado, dramas, comida coreana, recetas, favoritos, destacados" >
+    <meta name="description"
+        content="¡Descubrí Dramalandia! Tu perfil personalizado con tus dramas, eventos y comidas favoritas">
+    <meta name="keywords"
+        content="dramalandia, perfil personalizado, dramas, comida coreana, recetas, favoritos, destacados">
     <!-- Iconos -->
     <link rel="shortcut icon" href="../imagenes/corazon corea.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -26,220 +28,219 @@
     <title>Dramalandia - Tu perfil personalizado</title>
 </head>
 
-<body>
-    <div class="container-fluid">
-        <header class="container-fluid cont-perfil">
-            <!-- Barra de navegación -->
-            <nav class="navbar navbar-expand-md navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html">
-                        <img class="logo" src="../imagenes/Dramalandia logo.png" alt="Dramalandia logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/dramas.html">Dramas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/foodies.html">Foodies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/eventos.html">Eventos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/perfil.html"><strong>PERFIL</strong></a>
-                            </li>
-                        </ul>
-                    </div>
+<body class="container-fluid">
+    <header class="container-fluid cont-perfil">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../imagenes/Dramalandia logo.png" alt="Dramalandia logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/dramas.html">Dramas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/foodies.html">Foodies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/perfil.html"><strong>PERFIL</strong></a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-            <form action="/upload" method="post" enctype="multipart/form-data" class="contenedor">
-                <label for="file-upload" class="boton-upload">Subir nueva imágen</label>
-            </form>
-        </header>
+            </div>
+        </nav>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="contenedor">
+            <label for="file-upload" class="boton-upload">Subir nueva imágen</label>
+        </form>
+    </header>
 
-        <!-- Banner -->
-        <div class="row">
-            <div class="banner-fav col-12 d-flex align-content-center">
-                <h2>FAVORITOS</h2>
-            </div>
+    <!-- Banner -->
+    <div class="row">
+        <div class="banner-fav col-12 d-flex align-content-center">
+            <h2>FAVORITOS</h2>
         </div>
-
-        <!-- Favoritos drama -->
-        <!-- Banner -->
-        <div class="row">
-            <div class="banner-fav-drama col-12 d-flex align-content-center">
-                <h2>Dramas ♥</h2>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <!-- Inicio card -->
-                <div class="card-2 col-lg-3 col-md-6 col-sm-12">
-                    <h5 class="text-fav">My Demon</h5>
-                    <img class="img-fav" src="../imagenes/mydemon2.png" alt="my demon">
-                    <div class="symbols-container">
-                        <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
-                        <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="kocowa">
-                    </div>
-                </div>
-                <!-- Fin card -->
-                <!-- Inicio card -->
-                <div class="card-2 col-lg-3 col-md-6 col-sm-12">
-                    <h5 class="text-fav">My Name</h5>
-                    <img class="img-fav" src="../imagenes/myname2.jpg" alt="my name">
-                    <div class="symbols-container">
-                        <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
-                        <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="kocowa">
-                        <img class="symbols" src="../imagenes/viki-symbol.jpg" alt="viki">
-                    </div>
-                </div>
-                <!-- Fin card -->
-                <!-- Inicio card -->
-                <div class="card-2 col-lg-3 col-md-6 col-sm-12">
-                    <h5 class="text-fav">Wok of love</h5>
-                    <img class="img-fav" src="../imagenes/wokoflove2.png" alt="wok of love">
-                    <div class="symbols-container">
-                        <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
-                        <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="kocowa">
-                    </div>
-                </div>
-                <!-- Fin card -->
-                <!-- Inicio card -->
-                <div class="card-2 col-lg-3 col-md-6 col-sm-12">
-                    <h5 class="text-fav">It's ok not to be ok</h5>
-                    <img class="img-fav" src="../imagenes/itsoknottobeok2.png" alt="it's ok not to be ok">
-                    <div class="symbols-container">
-                        <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
-                        <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="kocowa">
-                        <img class="symbols" src="../imagenes/viki-symbol.jpg" alt="viki">
-                    </div>
-                </div>
-                <!-- Fin card -->
-                <!-- Inicio card -->
-            </div>
-        </div>
-
-        <!-- Favoritos foodies -->
-        <!-- Banner -->
-        <div class="row">
-            <div class="banner-fav-foodies col-12 d-flex align-content-center">
-                <h2>Foodies ♥</h2>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <!-- Inicio card -->
-                <div class="card-2 col-lg-4 col-md-6 col-sm-12">
-                    <h5 class="text-fav">Bibimbap</h5>
-                    <img class="img-fav" src="../imagenes/Bibimbap.webp" alt="Bibimbap">
-                    <a class="ver-receta" href="#" target="_blank">Ver receta</a>
-                </div>
-                <!-- Fin card -->
-                <!-- Inicio card -->
-                <div class="card-2 col-lg-4 col-md-6 col-sm-6">
-                    <h5 class="text-fav">Kimchi</h5>
-                    <img class="img-fav" src="../imagenes/kimchi.webp" alt="Kimchi">
-                    <a class="ver-receta" href="#" target="_blank">Ver receta</a>
-                </div>
-                <!-- Fin card -->
-                <!-- Inicio card -->
-                <div class="card-2 col-lg-4 col-md-6 col-sm-6">
-                    <h5 class="text-fav">Tteokbokki</h5>
-                    <img class="img-fav" src="../imagenes/Tteokbokki.webp" alt="Tteokbokki">
-                    <a class="ver-receta" href="#" target="_blank">Ver receta</a>
-                </div>
-                <!-- Fin card -->
-                <!-- Inicio card -->
-            </div>
-        </div>
-
-        <!-- Favoritos eventos -->
-        <!-- Banner -->
-        <div class="row">
-            <div class="banner-fav-eventos col-12 d-flex align-content-center">
-                <h2>Eventos ♥</h2>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <!-- Inicio card -->
-                <div class="card-2 col-lg-4 col-md-6 col-sm-12">
-                    <h5 class="text-fav">Festival Hansik</h5>
-                    <img class="img-fav" src="../imagenes/festivalhansik.png" alt="Festival">
-                    <a class="ver-receta" href="../pages/eventos.html">Más información</a>
-                </div>
-                <!-- Fin card -->
-                <!-- Inicio card -->
-                <div class="card-2 col-lg-4 col-md-6 col-sm-12">
-                    <h5 class="text-fav">Taller</h5>
-                    <img class="img-fav" src="../imagenes/tallervestimenta.png" alt="taller">
-                    <a class="ver-receta" href="../pages/eventos.html">Más información</a>
-                </div>
-                <!-- Fin card -->
-            </div>
-        </div>
-
-        <a href="#" class="subir">
-            <i class="fa-solid fa-angle-up"></i>
-        </a>
-
-        <!-- Footer -->
-        <footer class="container-fluid footer-body">
-            <div class="row">
-                <div class="col-lg-6 col-md-5 col-sm-12 p-0">
-                    <!--Sección enlaces-->
-                    <div class="redes">
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </a>
-                        <a href="https://es-la.facebook.com" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="https://discord.com/" target="_blank">
-                            <i class="fa-brands fa-discord"></i>
-                        </a>
-                        <a href="https://www.reddit.com/" target="_blank">
-                            <i class="fa-brands fa-reddit"></i>
-                        </a>
-                    </div>
-                    <div class="enlaces">
-                        <h3 class="titulofooter1">ENLACES</h3>
-                        <div class="enlaces1">
-                            <a href="./index.html">Home</a>
-                            <a href="./Pages/Dramas.html">Dramas</a>
-                            <a href="./Pages/Foodies.html">Foodies</a>
-                            <a href="./Pages/Eventos.html">Eventos</a>
-                            <a href="./Pages/Perfil.html">Perfil</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-7 col-sm-12 p-0">
-                    <!--Sección suscripción a newsletter-->
-                    <div class="newsletter">
-                        <h3 class="titulofooter2">NEWSLETTER</h3>
-                        <form action="enviar.php">
-                            <input type="email" class="email" placeholder="Ingresá tu email">
-                            <br>
-                            <button class="buttonfooter" type="submit">Suscribirme</button>
-                        </form>
-                    </div>
-                    <!--Sección copy rights e info propietario-->
-                    <div>
-                        <h3 class="textofooter">CODERHOUSE / © Estefanía Marcén / Desarrollo web</h3>
-                        <p class="textofooter2">
-                            <a href="#" target="_blank">Política de privacidad</a>
-                            <a href="#" target="_blank">Términos del servicio</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
+
+    <!-- Favoritos drama -->
+    <!-- Banner -->
+    <div class="row">
+        <div class="banner-fav-drama col-12 d-flex align-content-center">
+            <h2>Dramas ♥</h2>
+        </div>
+    </div>
+    <section class="container">
+        <div class="row">
+            <!-- Inicio card -->
+            <div class="card-2 col-lg-3 col-md-6 col-sm-12">
+                <h5 class="text-fav">My Demon</h5>
+                <img class="img-fav" src="../imagenes/mydemon2.png" alt="my demon">
+                <div class="symbols-container">
+                    <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
+                    <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="kocowa">
+                </div>
+            </div>
+            <!-- Fin card -->
+            <!-- Inicio card -->
+            <div class="card-2 col-lg-3 col-md-6 col-sm-12">
+                <h5 class="text-fav">My Name</h5>
+                <img class="img-fav" src="../imagenes/myname2.jpg" alt="my name">
+                <div class="symbols-container">
+                    <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
+                    <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="kocowa">
+                    <img class="symbols" src="../imagenes/viki-symbol.jpg" alt="viki">
+                </div>
+            </div>
+            <!-- Fin card -->
+            <!-- Inicio card -->
+            <div class="card-2 col-lg-3 col-md-6 col-sm-12">
+                <h5 class="text-fav">Wok of love</h5>
+                <img class="img-fav" src="../imagenes/wokoflove2.png" alt="wok of love">
+                <div class="symbols-container">
+                    <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
+                    <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="kocowa">
+                </div>
+            </div>
+            <!-- Fin card -->
+            <!-- Inicio card -->
+            <div class="card-2 col-lg-3 col-md-6 col-sm-12">
+                <h5 class="text-fav">It's ok not to be ok</h5>
+                <img class="img-fav" src="../imagenes/itsoknottobeok2.png" alt="it's ok not to be ok">
+                <div class="symbols-container">
+                    <img class="symbols" src="../imagenes/Netflix-Symbol.png" alt="netflix">
+                    <img class="symbols" src="../imagenes/kocowa-symbol.jpg" alt="kocowa">
+                    <img class="symbols" src="../imagenes/viki-symbol.jpg" alt="viki">
+                </div>
+            </div>
+            <!-- Fin card -->
+            <!-- Inicio card -->
+        </div>
+    </section>
+
+    <!-- Favoritos foodies -->
+    <!-- Banner -->
+    <div class="row">
+        <div class="banner-fav-foodies col-12 d-flex align-content-center">
+            <h2>Foodies ♥</h2>
+        </div>
+    </div>
+    <section class="container">
+        <div class="row">
+            <!-- Inicio card -->
+            <div class="card-2 col-lg-4 col-md-6 col-sm-12">
+                <h5 class="text-fav">Bibimbap</h5>
+                <img class="img-fav" src="../imagenes/Bibimbap.webp" alt="Bibimbap">
+                <a class="ver-receta" href="#" target="_blank">Ver receta</a>
+            </div>
+            <!-- Fin card -->
+            <!-- Inicio card -->
+            <div class="card-2 col-lg-4 col-md-6 col-sm-6">
+                <h5 class="text-fav">Kimchi</h5>
+                <img class="img-fav" src="../imagenes/kimchi.webp" alt="Kimchi">
+                <a class="ver-receta" href="#" target="_blank">Ver receta</a>
+            </div>
+            <!-- Fin card -->
+            <!-- Inicio card -->
+            <div class="card-2 col-lg-4 col-md-6 col-sm-6">
+                <h5 class="text-fav">Tteokbokki</h5>
+                <img class="img-fav" src="../imagenes/Tteokbokki.webp" alt="Tteokbokki">
+                <a class="ver-receta" href="#" target="_blank">Ver receta</a>
+            </div>
+            <!-- Fin card -->
+            <!-- Inicio card -->
+        </div>
+    </section>
+
+    <!-- Favoritos eventos -->
+    <!-- Banner -->
+    <div class="row">
+        <div class="banner-fav-eventos col-12 d-flex align-content-center">
+            <h2>Eventos ♥</h2>
+        </div>
+    </div>
+    <section class="container">
+        <div class="row">
+            <!-- Inicio card -->
+            <div class="card-2 col-lg-4 col-md-6 col-sm-12">
+                <h5 class="text-fav">Festival Hansik</h5>
+                <img class="img-fav" src="../imagenes/festivalhansik.png" alt="Festival">
+                <a class="ver-receta" href="../pages/eventos.html">Más información</a>
+            </div>
+            <!-- Fin card -->
+            <!-- Inicio card -->
+            <div class="card-2 col-lg-4 col-md-6 col-sm-12">
+                <h5 class="text-fav">Taller</h5>
+                <img class="img-fav" src="../imagenes/tallervestimenta.png" alt="taller">
+                <a class="ver-receta" href="../pages/eventos.html">Más información</a>
+            </div>
+            <!-- Fin card -->
+        </div>
+    </section>
+
+    <a href="#" class="subir">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="container-fluid footer-body">
+        <div class="row">
+            <div class="col-lg-6 col-md-5 col-sm-12 p-0">
+                <!--Sección enlaces-->
+                <div class="redes">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="https://es-la.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://discord.com/" target="_blank">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://www.reddit.com/" target="_blank">
+                        <i class="fa-brands fa-reddit"></i>
+                    </a>
+                </div>
+                <div class="enlaces">
+                    <h3 class="titulofooter1">ENLACES</h3>
+                    <div class="enlaces1">
+                        <a href="./index.html">Home</a>
+                        <a href="./Pages/Dramas.html">Dramas</a>
+                        <a href="./Pages/Foodies.html">Foodies</a>
+                        <a href="./Pages/Eventos.html">Eventos</a>
+                        <a href="./Pages/Perfil.html">Perfil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-12 p-0">
+                <!--Sección suscripción a newsletter-->
+                <div class="newsletter">
+                    <h3 class="titulofooter2">NEWSLETTER</h3>
+                    <form action="enviar.php">
+                        <input type="email" class="email" placeholder="Ingresá tu email">
+                        <br>
+                        <button class="buttonfooter" type="submit">Suscribirme</button>
+                    </form>
+                </div>
+                <!--Sección copy rights e info propietario-->
+                <div>
+                    <h3 class="textofooter">CODERHOUSE / © Estefanía Marcén / Desarrollo web</h3>
+                    <p class="textofooter2">
+                        <a href="#" target="_blank">Política de privacidad</a>
+                        <a href="#" target="_blank">Términos del servicio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 
 
