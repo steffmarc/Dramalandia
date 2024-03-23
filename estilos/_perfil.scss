@@ -1,20 +1,22 @@
 /* Botón subir o cambiar imágenes */
 .boton-upload {
-    position: absolute;
-    bottom: 100px;
-    right: 10px;
-    padding: 5px 15px;
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    border-radius: 50px;
-    color: #000;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    label {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        padding: 5px 15px;
+        font-size: 14px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        border-radius: 50px;
+        color: #000;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
 
-    &:hover {
-        background-color: $color-complementario;
-        color: $color-primario;
+        &:hover {
+            background-color: $color-complementario;
+            color: $color-primario;
+        }
     }
 }
 
@@ -115,17 +117,7 @@
     }
 }
 
-@media only screen and (min-width: 578px) {
-    .boton-upload {
-        bottom: 620px;
-    }
-}
-
 @media only screen and (min-width: 768px) {
-    .boton-upload {
-        bottom: 560px;
-    }
-
     .banner-fav {
         height: 260px;
 
@@ -159,10 +151,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .boton-upload {
-        bottom: -110px;
-    }
-
     .banner-fav {
         height: 400px;
         margin: $margin-md;

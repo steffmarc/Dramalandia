@@ -5,7 +5,8 @@
     overflow: scroll;
     gap: 15px;
 }
-.filtros::-webkit-scrollbar{
+
+.filtros::-webkit-scrollbar {
     display: none;
 }
 
@@ -37,8 +38,8 @@
     }
 }
 
-.card{
-    .card-body{
+.card {
+    .card-body {
         .btn-drama {
             text-decoration: none;
             color: $color-acento;
@@ -46,7 +47,7 @@
             border-radius: 50px;
             font-size: 16px;
         }
-        
+
         .symbols {
             width: 40px;
             height: 40px;
@@ -62,12 +63,6 @@ iframe {
 }
 
 @media only screen and (min-width: 578px) {
-    .call{
-        h4{
-            width: 40vw;
-        }
-    }
-
     .btn2 {
         font-size: 16px;
     }
@@ -87,12 +82,6 @@ iframe {
 }
 
 @media only screen and (min-width: 768px) {
-    .call{
-        h4{
-            width: 30vw;
-        }
-    }
-
     .card {
         .card-video {
             height: 350px;
@@ -107,7 +96,7 @@ iframe {
         }
     }
 
-    .filtros{
+    .filtros {
         overflow-x: visible;
         width: 100%;
         justify-content: space-around;

@@ -22,6 +22,7 @@
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/mydemonhome.png);
+  position: relative;
 }
 
 .cont-drama {
@@ -30,6 +31,7 @@
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/kokdu.jpg);
+  position: relative;
 }
 
 .cont-foodies {
@@ -38,6 +40,7 @@
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/comidacoreana.jpg);
+  position: relative;
 }
 
 .cont-eventos {
@@ -46,14 +49,17 @@
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/kpop3.jpeg);
+  position: relative;
 }
 
 .cont-perfil {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-size: cover;
   height: 430px;
   background-image: url(../imagenes/chaeunwoo.png);
+  position: relative;
 }
 
 /* NAV */
@@ -63,10 +69,11 @@
   width: 90%;
   border-radius: 50px;
   background-color: #fffff2;
-  margin-top: 3%;
+  margin-top: 2rem;
   position: absolute;
   padding-left: 20px;
   transition: background-color 0.5s ease, color 0.5s ease;
+  z-index: 1;
 }
 .navbar .logo {
   width: 100%;
@@ -100,14 +107,13 @@
 
 /* CTA */
 .call {
-  width: 90%;
-  height: 500px;
-  margin-left: 10%;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-  margin-top: 30%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  padding: 6rem 0 0 8vw;
 }
 .call h1 {
   color: #fffff2;
@@ -123,6 +129,7 @@
   width: 75vw;
 }
 .call .btn1 {
+  width: min-content;
   text-decoration: none;
   color: #800020;
   background-color: #fffff2;
@@ -326,12 +333,10 @@
   .navbar .navbar-brand {
     width: 40%;
   }
-  .call {
-    margin-top: 20vh;
-  }
   .call h4 {
-    width: 45vw;
-    margin: 2.5vh 0 2.5vh 0;
+    width: 40vw;
+    font-size: 17px;
+    margin: 5vh 0 5vh 0;
   }
   .card .card-body img {
     margin: 2.5vh 0 2.5vh 0;
@@ -384,23 +389,27 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  .cont-header, .cont-drama, .cont-foodies, .cont-eventos, .cont-perfil {
+  .cont-header,
+  .cont-drama,
+  .cont-foodies,
+  .cont-eventos,
+  .cont-perfil {
     height: 500px;
   }
-  .cont-header .navbar .navbar-brand, .cont-drama .navbar .navbar-brand, .cont-foodies .navbar .navbar-brand, .cont-eventos .navbar .navbar-brand, .cont-perfil .navbar .navbar-brand {
+  .cont-header .navbar .navbar-brand,
+  .cont-drama .navbar .navbar-brand,
+  .cont-foodies .navbar .navbar-brand,
+  .cont-eventos .navbar .navbar-brand,
+  .cont-perfil .navbar .navbar-brand {
     width: 35%;
   }
-  .cont-header .navbar .navbar-nav .nav-item, .cont-drama .navbar .navbar-nav .nav-item, .cont-foodies .navbar .navbar-nav .nav-item, .cont-eventos .navbar .navbar-nav .nav-item, .cont-perfil .navbar .navbar-nav .nav-item {
+  .cont-header .navbar .navbar-nav .nav-item,
+  .cont-drama .navbar .navbar-nav .nav-item,
+  .cont-foodies .navbar .navbar-nav .nav-item,
+  .cont-eventos .navbar .navbar-nav .nav-item,
+  .cont-perfil .navbar .navbar-nav .nav-item {
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .cont-header .call, .cont-drama .call, .cont-foodies .call, .cont-eventos .call, .cont-perfil .call {
-    margin-top: 120px;
-  }
-  .cont-header .call h4, .cont-drama .call h4, .cont-foodies .call h4, .cont-eventos .call h4, .cont-perfil .call h4 {
-    width: 40vw;
-    font-size: 17px;
-    margin: 5vh 0 5vh 0;
   }
   .banner {
     margin: 5vh 0 5vh 0;
@@ -480,21 +489,33 @@
   }
 }
 @media only screen and (min-width: 1200px) {
-  .cont-header, .cont-drama, .cont-foodies, .cont-eventos, .cont-perfil {
+  .cont-header,
+  .cont-drama,
+  .cont-foodies,
+  .cont-eventos,
+  .cont-perfil {
     height: 710px;
   }
-  .cont-header .navbar .navbar-brand, .cont-drama .navbar .navbar-brand, .cont-foodies .navbar .navbar-brand, .cont-eventos .navbar .navbar-brand, .cont-perfil .navbar .navbar-brand {
+  .cont-header .navbar .navbar-brand,
+  .cont-drama .navbar .navbar-brand,
+  .cont-foodies .navbar .navbar-brand,
+  .cont-eventos .navbar .navbar-brand,
+  .cont-perfil .navbar .navbar-brand {
     width: 20%;
   }
-  .cont-header .navbar .navbar-collapse, .cont-drama .navbar .navbar-collapse, .cont-foodies .navbar .navbar-collapse, .cont-eventos .navbar .navbar-collapse, .cont-perfil .navbar .navbar-collapse {
+  .cont-header .navbar .navbar-collapse,
+  .cont-drama .navbar .navbar-collapse,
+  .cont-foodies .navbar .navbar-collapse,
+  .cont-eventos .navbar .navbar-collapse,
+  .cont-perfil .navbar .navbar-collapse {
     justify-content: end;
     margin-right: 50px;
   }
-  .cont-header .call, .cont-drama .call, .cont-foodies .call, .cont-eventos .call, .cont-perfil .call {
-    margin-top: 180px;
-    margin-left: 7%;
-  }
-  .cont-header .call h4, .cont-drama .call h4, .cont-foodies .call h4, .cont-eventos .call h4, .cont-perfil .call h4 {
+  .cont-header .call h4,
+  .cont-drama .call h4,
+  .cont-foodies .call h4,
+  .cont-eventos .call h4,
+  .cont-perfil .call h4 {
     width: 35vw;
     font-size: 25px;
     margin: 5vh 0 5vh 0;
@@ -633,9 +654,6 @@ iframe {
 }
 
 @media only screen and (min-width: 578px) {
-  .call h4 {
-    width: 40vw;
-  }
   .btn2 {
     font-size: 16px;
   }
@@ -651,9 +669,6 @@ iframe {
   }
 }
 @media only screen and (min-width: 768px) {
-  .call h4 {
-    width: 30vw;
-  }
   .card .card-video {
     height: 350px;
   }
@@ -763,10 +778,10 @@ iframe {
   }
 }
 /* Botón subir o cambiar imágenes */
-.boton-upload {
+.boton-upload label {
   position: absolute;
-  bottom: 100px;
-  right: 10px;
+  bottom: 1rem;
+  right: 1rem;
   padding: 5px 15px;
   font-size: 14px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -776,7 +791,7 @@ iframe {
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-.boton-upload:hover {
+.boton-upload label:hover {
   background-color: #fffff2;
   color: #800020;
 }
@@ -893,15 +908,7 @@ iframe {
   color: #800020;
 }
 
-@media only screen and (min-width: 578px) {
-  .boton-upload {
-    bottom: 620px;
-  }
-}
 @media only screen and (min-width: 768px) {
-  .boton-upload {
-    bottom: 560px;
-  }
   .banner-fav {
     height: 260px;
   }
@@ -930,9 +937,6 @@ iframe {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .boton-upload {
-    bottom: -110px;
-  }
   .banner-fav {
     height: 400px;
     margin: 15vh 0 15vh 0;
