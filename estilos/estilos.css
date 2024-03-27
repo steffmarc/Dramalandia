@@ -701,26 +701,26 @@
 }
 
 .btn2 {
-  padding: 5px 15px;
-  border-radius: 20px;
+  padding: 10px 30px;
+  border-radius: 50px;
   background-color: #5E6472;
   color: #fffff2;
   border-style: none;
   transition: 400ms linear;
-  font-size: 13px;
+  font-size: 16px;
 }
 .btn2:hover {
   background-color: #800020;
 }
 
 .btn3 {
-  padding: 5px 15px;
-  border-radius: 20px;
+  padding: 10px 30px;
+  border-radius: 50px;
   background-color: #fffff2;
   color: #800020;
   border-style: none;
   transition: 400ms linear;
-  font-size: 13px;
+  font-size: 16px;
   border: 1.5px solid #800020;
 }
 .btn3:hover {
@@ -747,15 +747,6 @@ iframe {
 }
 
 @media only screen and (min-width: 578px) {
-  .filtros {
-    margin-left: 1rem;
-  }
-  .btn2 {
-    font-size: 16px;
-  }
-  .btn3 {
-    font-size: 16px;
-  }
   .card {
     margin-top: 0;
   }
@@ -769,7 +760,7 @@ iframe {
     height: 350px;
   }
   .filtros {
-    justify-content: space-evenly;
+    justify-content: space-evenly !important;
   }
 }
 @media only screen and (min-width: 1200px) {
