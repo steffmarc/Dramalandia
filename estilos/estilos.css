@@ -174,7 +174,7 @@
   color: #fffff2;
   font-weight: normal;
   line-height: 1.5;
-  margin: 5vh 0 5vh 0;
+  margin: 2rem 0 2rem 0;
   font-size: 16px;
   width: 75vw;
 }
@@ -245,14 +245,14 @@
   width: 100%;
   height: auto;
   background-size: cover;
-  margin: 10vh 0 5vh 0;
+  margin: 3rem 0 2rem 0;
 }
 
 /* CARD */
 .card {
   width: 90%;
   border-style: none;
-  margin: 5vh;
+  margin: 2rem 2rem 5rem 2rem;
 }
 .card .card-img {
   border-radius: 15px;
@@ -267,7 +267,7 @@
   justify-content: space-between;
 }
 .card .card-body img {
-  margin: 2vh 0 3vh 0;
+  margin: 2rem 0 1rem 0;
 }
 .card .card-body .card-title {
   color: #800020;
@@ -276,7 +276,7 @@
 }
 .card .card-body .card-text {
   color: #5E6472;
-  margin: 2.5vh 0 2.5vh 0;
+  margin: 1rem 0 1rem 0;
 }
 .card .card-body .btn {
   background-color: #5E6472;
@@ -285,7 +285,7 @@
   transition: background-color 0.5s ease, color 0.5s ease;
   font-size: 12px;
   border-style: none;
-  margin: 2.5vh 0 2.5vh 0;
+  margin: 1rem 0 1rem 0;
   width: 30vw;
 }
 .card .card-body .btn:hover {
@@ -315,7 +315,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  margin: 5vh 0 5vh 0;
+  margin: 2rem 0 2rem 0;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 .footer-body .redes a {
@@ -335,7 +335,7 @@
   color: #800020;
   font-size: 18px;
   font-weight: bold;
-  margin: 2.5vh 0 2.5vh 0;
+  margin: 1rem 0 1rem 0;
 }
 .footer-body .enlaces .enlaces1 {
   display: flex;
@@ -366,7 +366,7 @@
   padding: 5px 15px;
   border-radius: 50px;
   text-align: center;
-  margin: 5vh 0 5vh 0;
+  margin: 2rem 0 2rem 0;
   color: #800020;
   border: solid 2px #800020;
 }
@@ -393,7 +393,7 @@
   color: #800020;
   font-size: 13px;
   font-weight: 400;
-  margin: 5vh 0 5vh 0;
+  margin: 2rem 0 2rem 0;
   width: 100%;
   text-align: center;
 }
@@ -436,7 +436,7 @@
   .call h4 {
     width: 40vw;
     font-size: 17px;
-    margin: 5vh 0 5vh 0;
+    margin: 2rem 0 2rem 0;
   }
   .card .card-body .btn {
     width: 100px;
@@ -467,7 +467,7 @@
   .footer-body .newsletter .email {
     width: 50vw;
     font-size: 16px;
-    margin: 2.5vh 0 2.5vh 0;
+    margin: 1rem 0 1rem 0;
   }
   .footer-body .newsletter .buttonfooter {
     font-size: 16px;
@@ -503,7 +503,7 @@
     padding-right: 15px;
   }
   .banner {
-    margin: 5vh 0 5vh 0;
+    margin: 4rem 0 3rem 0;
   }
   .card .card-body img {
     width: 100px;
@@ -514,7 +514,7 @@
   }
   .card .card-body .card-text {
     font-size: 17px;
-    margin: 2.5vh 0 2.5vh 0;
+    margin: 1rem 0 1rem 0;
   }
   .card .card-body .btn {
     font-size: 16px;
@@ -567,7 +567,7 @@
   .footer-body .newsletter form .email {
     width: 40vw;
     font-size: 16px;
-    margin: 2.5vh 0 2.5vh 0;
+    margin: 1rem 0 1rem 0;
   }
   .footer-body .textofooter {
     font-size: 20px;
@@ -610,13 +610,12 @@
   .cont-perfil .call h4 {
     width: 35vw;
     font-size: 25px;
-    margin: 5vh 0 5vh 0;
+    margin: 2rem 0 2rem 0;
   }
   .banner {
-    margin: 15vh 0 15vh 0;
+    margin: 6rem 0 4rem 0;
   }
   .card {
-    margin-bottom: 10vh;
     width: 95%;
   }
   .card .card-img {
@@ -626,10 +625,10 @@
   .card .card-body img {
     width: 70px;
     height: auto;
-    margin-bottom: 2vh;
+    margin: 0 0 2rem 0;
   }
   .card .card-body .card-text {
-    margin: 2.5vh 0 2.5vh 0;
+    margin: 1rem 0 1rem 0;
   }
   .card .card-body .btn {
     margin: 0;
@@ -676,7 +675,7 @@
   .footer-body .newsletter form .email {
     width: 30vw;
     font-size: 16px;
-    margin: 5vh 0 5vh 0;
+    margin: 2rem 0 2rem 0;
   }
   .footer-body .textofooter {
     font-size: 20px;
@@ -1034,7 +1033,7 @@ iframe {
 @media only screen and (min-width: 1200px) {
   .banner-fav {
     height: 400px;
-    margin: 15vh 0 15vh 0;
+    margin: 3em 0 3rem 0;
   }
   .banner-fav h2 {
     font-size: 150px;

@@ -35,11 +35,11 @@ $subtitulos: 25px;
 $texto: 17px;
 
 // Margenes
-$margin-xs: 2.5vh 0 2.5vh 0;
-$margin-sm: 5vh 0 5vh 0;
-$margin-md: 15vh 0 15vh 0;
-$margin-banner: 10vh 0 5vh 0;
-$margin-card: 5vh;
+$margin-xs: 1rem 0 1rem 0;
+$margin-sm: 2rem 0 2rem 0;
+$margin-md: 3em 0 3rem 0;
+$margin-banner: 3rem 0 2rem 0;
+$margin-card: 2rem 2rem 5rem 2rem;
 
 // Header
 @mixin contenedor-header($bg-header) {
@@ -322,7 +322,7 @@ $margin-card: 5vh;
         justify-content: space-between;
 
     img{
-        margin: 2vh 0 3vh 0;
+        margin: 2rem 0 1rem 0;
     }
 
         .card-title {
@@ -619,10 +619,11 @@ $margin-card: 5vh;
     }
 
     .banner {
-        margin: $margin-sm;
+        margin: 4rem 0 3rem 0;
     }
 
     .card {
+
         .card-body {
             img {
                 width: 100px;
@@ -752,11 +753,10 @@ $margin-card: 5vh;
     }
 
     .banner {
-        margin: $margin-md;
+        margin: 6rem 0 4rem 0;
     }
 
     .card {
-        margin-bottom: 10vh;
         width: 95%;
         
 
@@ -769,7 +769,7 @@ $margin-card: 5vh;
             img {
                 width: 70px;
                 height: auto;
-                margin-bottom: 2vh;
+                margin: 0 0 2rem 0;
             }
 
             .card-text {
