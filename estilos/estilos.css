@@ -252,10 +252,11 @@
 .card {
   width: 90%;
   border-style: none;
-  margin: 5vh 5vh 5vh 5vh;
+  margin: 5vh;
 }
 .card .card-img {
   border-radius: 15px;
+  object-fit: cover;
 }
 .card .img-eventos {
   width: 90%;
@@ -266,16 +267,16 @@
   justify-content: space-between;
 }
 .card .card-body img {
-  margin: 5vh 0 5vh 0;
+  margin: 2vh 0 3vh 0;
 }
 .card .card-body .card-title {
   color: #800020;
   font-weight: bold;
-  margin-bottom: -8px;
+  margin: 0;
 }
 .card .card-body .card-text {
   color: #5E6472;
-  margin: 5vh 0 5vh 0;
+  margin: 2.5vh 0 2.5vh 0;
 }
 .card .card-body .btn {
   background-color: #5E6472;
@@ -284,7 +285,7 @@
   transition: background-color 0.5s ease, color 0.5s ease;
   font-size: 12px;
   border-style: none;
-  margin: 5vh 0 5vh 0;
+  margin: 2.5vh 0 2.5vh 0;
   width: 30vw;
 }
 .card .card-body .btn:hover {
@@ -437,15 +438,9 @@
     font-size: 17px;
     margin: 5vh 0 5vh 0;
   }
-  .card .card-body img {
-    margin: 2.5vh 0 2.5vh 0;
-  }
-  .card .card-body .card-text {
-    margin: 2.5vh 0 2.5vh 0;
-  }
   .card .card-body .btn {
-    margin: 2.5vh 0 2.5vh 0;
-    width: 20vw;
+    width: 100px;
+    margin: 0;
   }
   .card .card-body .card-video {
     height: 280px;
@@ -515,15 +510,16 @@
     height: auto;
   }
   .card .card-body .card-title {
-    font-size: 30px;
+    font-size: 25px;
   }
   .card .card-body .card-text {
-    font-size: 18px;
+    font-size: 17px;
     margin: 2.5vh 0 2.5vh 0;
   }
   .card .card-body .btn {
     font-size: 16px;
-    padding: 5px 5px;
+    width: min-content;
+    text-wrap: nowrap;
   }
   .footer-body {
     height: 400px;
@@ -619,18 +615,23 @@
   .banner {
     margin: 15vh 0 15vh 0;
   }
+  .card {
+    margin-bottom: 10vh;
+    width: 95%;
+  }
   .card .card-img {
     height: 370px;
+    border-radius: 25px;
   }
   .card .card-body img {
     width: 70px;
     height: auto;
+    margin-bottom: 2vh;
   }
   .card .card-body .card-text {
     margin: 2.5vh 0 2.5vh 0;
   }
   .card .card-body .btn {
-    width: 10vw;
     margin: 0;
   }
   .footer-body {

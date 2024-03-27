@@ -30,16 +30,16 @@ $color-acento: #5E6472;
 $font-bold: bold;
 $font-normal: normal;
 $font-500: 500;
-$titulos: 30px;
+$titulos: 25px;
 $subtitulos: 25px;
-$texto: 18px;
+$texto: 17px;
 
 // Margenes
 $margin-xs: 2.5vh 0 2.5vh 0;
 $margin-sm: 5vh 0 5vh 0;
 $margin-md: 15vh 0 15vh 0;
 $margin-banner: 10vh 0 5vh 0;
-$margin-card: 5vh 5vh 5vh 5vh;
+$margin-card: 5vh;
 
 // Header
 @mixin contenedor-header($bg-header) {
@@ -309,6 +309,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
 
     .card-img {
         border-radius: 15px;
+        object-fit: cover;
     }
 
     .img-eventos {
@@ -320,19 +321,19 @@ $margin-card: 5vh 5vh 5vh 5vh;
         flex-direction: column;
         justify-content: space-between;
 
-        img {
-            margin: $margin-sm
-        }
+    img{
+        margin: 2vh 0 3vh 0;
+    }
 
         .card-title {
             color: $color-primario;
             font-weight: $font-bold;
-            margin-bottom: -8px;
+            margin: 0;
         }
 
         .card-text {
             color: $color-acento;
-            margin: $margin-sm;
+            margin: $margin-xs;
         }
 
         .btn {
@@ -342,7 +343,7 @@ $margin-card: 5vh 5vh 5vh 5vh;
             transition: background-color 0.5s ease, color 0.5s ease;
             font-size: 12px;
             border-style: none;
-            margin: $margin-sm;
+            margin: $margin-xs;
             width: 30vw;
 
             &:hover {
@@ -533,17 +534,9 @@ $margin-card: 5vh 5vh 5vh 5vh;
     .card {
 
         .card-body {
-            img {
-                margin: $margin-xs;
-            }
-
-            .card-text {
-                margin: $margin-xs;
-            }
-
             .btn {
-                margin: $margin-xs;
-                width: 20vw;
+                width: 100px;
+                margin: 0;
             }
 
             .card-video {
@@ -647,7 +640,8 @@ $margin-card: 5vh 5vh 5vh 5vh;
 
             .btn {
                 font-size: 16px;
-                padding: 5px 5px;
+                width: min-content;
+                text-wrap: nowrap;
             }
         }
     }
@@ -762,14 +756,20 @@ $margin-card: 5vh 5vh 5vh 5vh;
     }
 
     .card {
+        margin-bottom: 10vh;
+        width: 95%;
+        
+
         .card-img {
             height: 370px;
+            border-radius: 25px;
         }
 
         .card-body {
             img {
                 width: 70px;
                 height: auto;
+                margin-bottom: 2vh;
             }
 
             .card-text {
@@ -777,7 +777,6 @@ $margin-card: 5vh 5vh 5vh 5vh;
             }
 
             .btn {
-                width: 10vw;
                 margin: 0;
             }
         }
