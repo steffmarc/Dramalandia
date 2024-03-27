@@ -183,7 +183,7 @@
   text-decoration: none;
   color: #800020;
   background-color: #fffff2;
-  padding: 5px 15px;
+  padding: 10px 25px;
   font-weight: 500;
   border-radius: 50px;
   font-size: 1rem;
@@ -299,6 +299,7 @@
   border-radius: 10px;
 }
 
+/* SYMBOLS */
 /* FOOTER */
 .footer-body {
   width: 100%;
@@ -735,11 +736,21 @@
   border-radius: 50px;
   font-size: 16px;
 }
-.card .card-body .symbols {
+.card .card-body .symbols-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card .card-body .symbols-container .symbols {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  margin: 0 0 0 20px;
+  margin: 0;
+  transition: 300ms;
+  cursor: pointer;
+}
+.card .card-body .symbols-container .symbols:hover {
+  scale: 1.5;
 }
 
 iframe {
@@ -978,13 +989,20 @@ iframe {
 }
 .card-2 .symbols-container {
   display: flex;
+  align-items: center;
+  gap: 1rem;
   justify-content: center;
-  gap: 1.5rem;
 }
-.card-2 .symbols {
+.card-2 .symbols-container .symbols {
   width: 40px;
   height: 40px;
   border-radius: 50px;
+  margin: 0;
+  transition: 300ms;
+  cursor: pointer;
+}
+.card-2 .symbols-container .symbols:hover {
+  scale: 1.5;
 }
 .card-2 .ver-receta {
   color: #5E6472;

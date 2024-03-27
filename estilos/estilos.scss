@@ -218,7 +218,7 @@ $margin-card: 2rem 2rem 5rem 2rem;
         text-decoration: none;
         color: $color-primario;
         background-color: $color-complementario;
-        padding: 5px 15px;
+        padding: 10px 25px;
         font-weight: $font-500;
         border-radius: 50px;
         font-size: 1rem;
@@ -232,6 +232,7 @@ $margin-card: 2rem 2rem 5rem 2rem;
     }
 
     animation: fade-slide-in-left 1500ms cubic-bezier(0.05, -0.01, 0, 1.01);
+
     @keyframes fade-slide-in-left {
         0% {
             transform: translateX(-110%);
@@ -321,9 +322,9 @@ $margin-card: 2rem 2rem 5rem 2rem;
         flex-direction: column;
         justify-content: space-between;
 
-    img{
-        margin: 2rem 0 1rem 0;
-    }
+        img {
+            margin: 2rem 0 1rem 0;
+        }
 
         .card-title {
             color: $color-primario;
@@ -348,7 +349,7 @@ $margin-card: 2rem 2rem 5rem 2rem;
 
             &:hover {
                 background-color: $color-primario;
-            }   
+            }
         }
     }
 
@@ -362,6 +363,25 @@ $margin-card: 2rem 2rem 5rem 2rem;
     }
 }
 
+/* SYMBOLS */
+@mixin symbols {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .symbols {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        margin: 0;
+        transition: 300ms;
+        cursor: pointer;
+
+        &:hover {
+            scale: 1.5;
+        }
+    }
+}
 
 /* FOOTER */
 .footer-body {
@@ -758,7 +778,7 @@ $margin-card: 2rem 2rem 5rem 2rem;
 
     .card {
         width: 95%;
-        
+
 
         .card-img {
             height: 370px;

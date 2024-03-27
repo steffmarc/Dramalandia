@@ -96,16 +96,11 @@
     }
 
     .symbols-container {
-        display: flex;
+        @include symbols;
         justify-content: center;
-        gap: 1.5rem;
     }
-    
-    .symbols {
-        width: 40px;
-        height: 40px;
-        border-radius: 50px;
-    }
+
+
 
     .ver-receta {
         color: $color-acento;
