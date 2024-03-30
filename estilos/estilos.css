@@ -124,6 +124,11 @@
 }
 .navbar .logo {
   width: 100%;
+  cursor: pointer;
+  transition: 300ms;
+}
+.navbar .logo:hover {
+  scale: 1.1;
 }
 .navbar .navbar-brand {
   margin-right: auto;
