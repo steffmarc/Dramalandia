@@ -6,7 +6,7 @@
         right: 1rem;
         padding: 5px 15px;
         font-size: 14px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: $color-complementario;
         border: none;
         border-radius: 50px;
         color: #000;
@@ -14,8 +14,8 @@
         transition: background-color 0.3s ease, color 0.3s ease;
 
         &:hover {
-            background-color: $color-complementario;
-            color: $color-primario;
+            background-color: $color-primario;
+            color: $color-complementario;
         }
     }
 }
@@ -89,7 +89,8 @@
 
     .img-fav {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
         border-radius: 20px;
         margin-top: 15px;
         margin-bottom: 15px;

@@ -50,6 +50,7 @@
   height: 430px;
   background-image: url(../imagenes/kpop3.jpeg);
   position: relative;
+  margin-bottom: 25px;
 }
 
 .cont-perfil {
@@ -292,10 +293,15 @@
   background-color: #800020;
 }
 .card .card-video {
-  width: 95%;
-  height: 150px;
   display: flex;
-  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.card .card-video iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -439,9 +445,6 @@
   .card .card-body .btn {
     width: 100px;
     margin: 0;
-  }
-  .card .card-body .card-video {
-    height: 280px;
   }
   .footer-body {
     height: 800px;
@@ -735,23 +738,10 @@ iframe {
   .card {
     margin-top: 0;
   }
-  .card .card-video {
-    height: 250px;
-    margin-bottom: 20px;
-  }
 }
 @media only screen and (min-width: 768px) {
-  .card .card-video {
-    height: 350px;
-  }
   .filtros {
     justify-content: space-evenly !important;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .card .card-video {
-    height: 300px;
-    border-radius: 20px;
   }
 }
 .h4-foodie {
@@ -855,7 +845,7 @@ iframe {
   right: 1rem;
   padding: 5px 15px;
   font-size: 14px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fffff2;
   border: none;
   border-radius: 50px;
   color: #000;
@@ -863,8 +853,8 @@ iframe {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .boton-upload label:hover {
-  background-color: #fffff2;
-  color: #800020;
+  background-color: #800020;
+  color: #fffff2;
 }
 
 .banner-fav {
@@ -956,7 +946,8 @@ iframe {
 }
 .card-2 .img-fav {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 20px;
   margin-top: 15px;
   margin-bottom: 15px;

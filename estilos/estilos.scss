@@ -65,6 +65,7 @@ $margin-card: 2rem 2rem 5rem 2rem;
 
 .cont-eventos {
     @include contenedor-header(url(../imagenes/kpop3.jpeg));
+    margin-bottom: 25px;
 }
 
 .cont-perfil {
@@ -357,12 +358,17 @@ $margin-card: 2rem 2rem 5rem 2rem;
     }
 
     .card-video {
-        width: 95%;
-        height: 150px;
         display: flex;
-        margin: 0 auto;
-        border-radius: 10px;
+        flex-direction: column;
+        justify-content: center;
 
+        iframe{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 10px;
+        }
     }
 }
 
@@ -560,10 +566,6 @@ $margin-card: 2rem 2rem 5rem 2rem;
             .btn {
                 width: 100px;
                 margin: 0;
-            }
-
-            .card-video {
-                height: 280px;
             }
         }
     }
