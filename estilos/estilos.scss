@@ -147,16 +147,6 @@ $margin-card: 2rem 2rem 5rem 2rem;
         }
     }
 
-    .logo {
-        width: 100%;
-        cursor: pointer;
-        transition: 300ms;
-
-        &:hover{
-            scale: 1.1;
-        }
-    }
-
     .navbar-brand {
         margin-right: auto;
         padding-left: 50px;
@@ -164,7 +154,17 @@ $margin-card: 2rem 2rem 5rem 2rem;
         font-weight: $font-bold;
         padding: 5px 15px;
         border-radius: 50px;
-        width: 50%;
+        // width: 50%;
+
+        .logo {
+            width: 190px;
+            cursor: pointer;
+            transition: 300ms;
+
+            &:hover {
+                scale: 1.1;
+            }
+        }
     }
 
     .navbar-toggler {
@@ -173,11 +173,7 @@ $margin-card: 2rem 2rem 5rem 2rem;
     }
 
     .navbar-nav {
-
         .nav-item {
-            padding-left: 20px;
-            padding-right: 50px;
-
             .nav-link {
                 color: $color-primario !important;
                 border-radius: 50px;
@@ -192,6 +188,7 @@ $margin-card: 2rem 2rem 5rem 2rem;
             }
         }
     }
+
 }
 
 /* CTA */
@@ -543,11 +540,11 @@ $margin-card: 2rem 2rem 5rem 2rem;
 // Ajustes responsive
 
 @media only screen and (min-width: 578px) {
-    .navbar {
-        .navbar-brand {
-            width: 40%;
-        }
-    }
+    // .navbar {
+    //     .navbar-brand {
+    //         width: 40%;
+    //     }
+    // }
 
     .call {
         h4 {
@@ -629,19 +626,14 @@ $margin-card: 2rem 2rem 5rem 2rem;
     .cont-perfil {
         height: 500px;
 
-        .navbar {
-            .navbar-brand {
-                width: 35%;
-            }
+        // .navbar {
+        //     .navbar-brand {
+        //         width: 30%;
+        //     }
 
-            .navbar-nav {
-                .nav-item {
-                    padding-left: 15px;
-                    padding-right: 15px;
-                }
-            }
-        }
 
+
+        // }
     }
 
     .banner {
@@ -760,11 +752,6 @@ $margin-card: 2rem 2rem 5rem 2rem;
         .navbar {
             .navbar-brand {
                 width: 20%;
-            }
-
-            .navbar-collapse {
-                justify-content: end;
-                margin-right: 50px;
             }
         }
 

@@ -122,14 +122,6 @@
     opacity: 1;
   }
 }
-.navbar .logo {
-  width: 100%;
-  cursor: pointer;
-  transition: 300ms;
-}
-.navbar .logo:hover {
-  scale: 1.1;
-}
 .navbar .navbar-brand {
   margin-right: auto;
   padding-left: 50px;
@@ -137,15 +129,18 @@
   font-weight: bold;
   padding: 5px 15px;
   border-radius: 50px;
-  width: 50%;
+}
+.navbar .navbar-brand .logo {
+  width: 190px;
+  cursor: pointer;
+  transition: 300ms;
+}
+.navbar .navbar-brand .logo:hover {
+  scale: 1.1;
 }
 .navbar .navbar-toggler {
   margin-right: 30px;
   border-style: none;
-}
-.navbar .navbar-nav .nav-item {
-  padding-left: 20px;
-  padding-right: 50px;
 }
 .navbar .navbar-nav .nav-item .nav-link {
   color: #800020 !important;
@@ -436,9 +431,6 @@
 }
 
 @media only screen and (min-width: 578px) {
-  .navbar .navbar-brand {
-    width: 40%;
-  }
   .call h4 {
     width: 40vw;
     font-size: 17px;
@@ -492,21 +484,6 @@
   .cont-eventos,
   .cont-perfil {
     height: 500px;
-  }
-  .cont-header .navbar .navbar-brand,
-  .cont-drama .navbar .navbar-brand,
-  .cont-foodies .navbar .navbar-brand,
-  .cont-eventos .navbar .navbar-brand,
-  .cont-perfil .navbar .navbar-brand {
-    width: 35%;
-  }
-  .cont-header .navbar .navbar-nav .nav-item,
-  .cont-drama .navbar .navbar-nav .nav-item,
-  .cont-foodies .navbar .navbar-nav .nav-item,
-  .cont-eventos .navbar .navbar-nav .nav-item,
-  .cont-perfil .navbar .navbar-nav .nav-item {
-    padding-left: 15px;
-    padding-right: 15px;
   }
   .banner {
     margin: 4rem 0 3rem 0;
@@ -600,14 +577,6 @@
   .cont-eventos .navbar .navbar-brand,
   .cont-perfil .navbar .navbar-brand {
     width: 20%;
-  }
-  .cont-header .navbar .navbar-collapse,
-  .cont-drama .navbar .navbar-collapse,
-  .cont-foodies .navbar .navbar-collapse,
-  .cont-eventos .navbar .navbar-collapse,
-  .cont-perfil .navbar .navbar-collapse {
-    justify-content: end;
-    margin-right: 50px;
   }
   .cont-header .call h4,
   .cont-drama .call h4,
