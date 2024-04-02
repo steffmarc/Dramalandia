@@ -1,0 +1,18 @@
+@mixin symbols {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .symbols {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        margin: 0;
+        transition: 300ms;
+        cursor: pointer;
+
+        &:hover {
+            scale: 1.5;
+        }
+    }
+}

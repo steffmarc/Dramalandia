@@ -1,0 +1,312 @@
+// Design System
+@use "../dsystem/colores" as *;
+@use "../dsystem/tipografia" as *;
+@use "../dsystem/margenes" as *;
+
+@media only screen and (min-width: 578px) {
+
+    .call {
+        h4 {
+            width: 40vw;
+            font-size: 17px;
+            margin: $margin-sm;
+        }
+    }
+
+    .card {
+
+        .card-body {
+            .btn {
+                width: 100px;
+                margin: 0;
+            }
+        }
+    }
+
+    .footer-body {
+        height: 800px;
+
+        .redes {
+            margin-top: 30px;
+
+            a {
+                font-size: 35px;
+            }
+        }
+
+        .enlaces {
+            .titulofooter1 {
+                font-size: 30px;
+            }
+
+            .enlaces1 a {
+                font-size: 25px;
+            }
+        }
+
+        .newsletter {
+            .titulofooter2 {
+                font-size: 30px;
+                margin-top: 50px;
+            }
+
+            .email {
+                width: 50vw;
+                font-size: 16px;
+                margin: $margin-xs;
+            }
+
+            .buttonfooter {
+                font-size: 16px;
+            }
+        }
+
+        .textofooter {
+            font-size: 18px;
+        }
+
+        .textofooter2 {
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .cont-header,
+    .cont-drama,
+    .cont-foodies,
+    .cont-eventos,
+    .cont-perfil {
+        height: 500px;
+    }
+
+    .banner {
+        margin: 4rem 0 3rem 0;
+    }
+
+    .card {
+
+        .card-body {
+            img {
+                width: 100px;
+                height: auto;
+            }
+
+            .card-title {
+                font-size: $titulos;
+            }
+
+            .card-text {
+                font-size: $texto;
+                margin: $margin-xs;
+            }
+
+            .btn {
+                font-size: 16px;
+                width: min-content;
+                text-wrap: nowrap;
+            }
+        }
+    }
+
+    .footer-body {
+        height: 400px;
+        background-position: 70% 0;
+
+        .redes {
+            justify-content: space-evenly;
+            background-color: $color-primario;
+            width: auto;
+            height: 50px;
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+            align-items: center;
+            margin: 0;
+
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                color: $color-complementario;
+                margin: 0 -6px 0 0;
+                padding-left: 0;
+                padding-right: 10px;
+                text-align: center;
+            }
+        }
+
+        .enlaces {
+            text-align: left;
+            margin-left: 50px;
+            margin-top: 60px;
+
+            .titulofooter1 {
+                color: $color-complementario;
+                text-shadow: 0 0 5px #000,
+                    0 0 5px #000;
+            }
+
+            .enlaces1 {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    color: $color-complementario;
+                    text-shadow: 0 0 5px #000,
+                        0 0 5px #000;
+                }
+            }
+        }
+
+        .newsletter {
+            padding-left: 10%;
+
+            form {
+                .email {
+                    width: 40vw;
+                    font-size: 16px;
+                    margin: $margin-xs;
+                }
+            }
+        }
+
+        .textofooter {
+            font-size: 20px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            padding-right: 5%;
+        }
+
+        .textofooter2 {
+            font-size: 18px;
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .cont-header,
+    .cont-drama,
+    .cont-foodies,
+    .cont-eventos,
+    .cont-perfil {
+        height: 710px;
+
+        .navbar {
+            .navbar-brand {
+                width: 20%;
+            }
+        }
+
+        .call {
+
+            h4 {
+                width: 35vw;
+                font-size: $subtitulos;
+                margin: $margin-sm;
+            }
+        }
+    }
+
+    .banner {
+        margin: 6rem 0 4rem 0;
+    }
+
+    .card {
+        width: 95%;
+
+
+        .card-img {
+            height: 370px;
+            border-radius: 25px;
+        }
+
+        .card-body {
+            img {
+                width: 70px;
+                height: auto;
+                margin: 0 0 2rem 0;
+            }
+
+            .card-text {
+                margin: $margin-xs;
+            }
+
+            .btn {
+                margin: 0;
+            }
+        }
+    }
+
+    .footer-body {
+        height: 400px;
+        background-position: 70% 0;
+
+        .redes {
+            justify-content: space-evenly;
+            background-color: $color-primario;
+            width: 350px;
+            height: 50px;
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+            align-items: center;
+            margin: 0;
+        }
+
+        .enlaces {
+            text-align: left;
+            margin-left: 50px;
+            margin-top: 70px;
+
+            .titulofooter1 {
+                color: $color-complementario;
+                text-shadow: 0 0 5px #000,
+                    0 0 5px #000;
+            }
+
+            .enlaces1 {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    color: $color-complementario;
+                    text-shadow: 0 0 5px #000000,
+                        0 0 5px #000000;
+
+                    &:hover {
+                        color: $color-primario;
+                        text-shadow: 0 0 5px #ffffff,
+                            0 0 5px #ffffff;
+                        font-weight: $font-bold;
+                    }
+                }
+            }
+        }
+
+        .newsletter {
+            margin-left: 5%;
+
+            form {
+                .email {
+                    width: 30vw;
+                    font-size: 16px;
+                    margin: $margin-sm;
+                }
+            }
+        }
+
+        .textofooter {
+            font-size: 20px;
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+
+        .textofooter2 {
+            font-size: 18px;
+            padding-right: 10%;
+            text-align: center;
+        }
+    }
+}

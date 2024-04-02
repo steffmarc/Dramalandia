@@ -1,0 +1,25 @@
+// Design System
+@use "../dsystem/colores" as *;
+@use "../dsystem/tipografia" as *;
+@use "../dsystem/margenes" as *;
+
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff7f;
+    color: $color-acento;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px #fff;
+    transition: 200ms;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-complementario;
+    }
+}

@@ -1,0 +1,11 @@
+// Design System
+@use "../dsystem/colores" as *;
+@use "../dsystem/tipografia" as *;
+@use "../dsystem/margenes" as *;
+
+.banner {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    margin: $margin-banner;
+}

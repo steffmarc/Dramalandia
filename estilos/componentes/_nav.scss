@@ -1,0 +1,121 @@
+// Design System
+@use "../dsystem/colores" as *;
+@use "../dsystem/tipografia" as *;
+@use "../dsystem/margenes" as *;
+
+.navbar {
+    display: flex;
+    align-self: center;
+    width: 90%;
+    border-radius: 50px;
+    background-color: $color-complementario;
+    margin-top: 2rem;
+    position: absolute;
+    padding-left: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    z-index: 1;
+
+    animation: fade-slide-in-top 1500ms cubic-bezier(0.05, -0.01, 0, 1.01);
+
+    @keyframes fade-slide-in-top {
+        0% {
+            transform: translateY(-110%);
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 0.1;
+        }
+
+        20% {
+            opacity: 0.1;
+        }
+
+        30% {
+            opacity: 0.2;
+        }
+
+        40% {
+            opacity: 0.25;
+        }
+
+        50% {
+            opacity: 0.3;
+        }
+
+        55% {
+            opacity: 0.4;
+        }
+
+        60% {
+            opacity: 0.5;
+        }
+
+        65% {
+            opacity: 0.6;
+        }
+
+        70% {
+            opacity: 0.7;
+        }
+
+        80% {
+            opacity: 0.75;
+        }
+
+        85% {
+            opacity: 0.8;
+        }
+
+        90% {
+            opacity: 0.9;
+        }
+
+        100% {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+        padding-left: 50px;
+        color: $color-primario !important;
+        font-weight: $font-bold;
+        padding: 5px 15px;
+        border-radius: 50px;
+
+        .logo {
+            width: 190px;
+            cursor: pointer;
+            transition: 300ms;
+
+            &:hover {
+                scale: 1.1;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        margin-right: 30px;
+        border-style: none;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $color-primario !important;
+                border-radius: 50px;
+                padding: 5px 15px;
+                transition: 200ms;
+
+                &:hover {
+                    background-color: $color-primario;
+                    color: $color-complementario !important;
+                    scale: 1.2;
+                }
+            }
+        }
+    }
+
+}

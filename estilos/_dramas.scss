@@ -1,3 +1,9 @@
+// Design System
+@use "./dsystem/colores" as *;
+@use "./dsystem/tipografia" as *;
+@use "./dsystem/margenes" as *;
+@use "./componentes/symbols" as *;
+
 .filtros {
     padding: 2rem;
     width: 100%;

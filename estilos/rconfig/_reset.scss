@@ -1,0 +1,18 @@
+// Ajustes ressets básicos y de BS
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    .row {
+        margin: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}

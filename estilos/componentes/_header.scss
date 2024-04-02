@@ -1,0 +1,35 @@
+// Design System
+@use "../dsystem/colores" as *;
+@use "../dsystem/tipografia" as *;
+@use "../dsystem/margenes" as *;
+
+@mixin contenedor-header($bg-header) {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    height: 430px;
+    background-image: $bg-header;
+    position: relative;
+}
+
+.cont-header {
+    @include contenedor-header(url(../imagenes/mydemonhome.png));
+}
+
+.cont-drama {
+    @include contenedor-header(url(../imagenes/kokdu.jpg));
+}
+
+.cont-foodies {
+    @include contenedor-header(url(../imagenes/comidacoreana.jpg));
+}
+
+.cont-eventos {
+    @include contenedor-header(url(../imagenes/kpop3.jpeg));
+    margin-bottom: 25px;
+}
+
+.cont-perfil {
+    position: relative;
+    @include contenedor-header(url(../imagenes/chaeunwoo.png));
+}
