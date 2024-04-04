@@ -34,7 +34,6 @@
   height: 430px;
   background-image: url(../imagenes/kpop3.jpeg);
   position: relative;
-  margin-bottom: 25px;
 }
 
 .cont-perfil {
@@ -356,9 +355,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 .card .card-body img {
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 0 0;
 }
 .card .card-body .card-title {
   color: #800020;
@@ -818,6 +818,7 @@ iframe {
 .btn-vermas {
   color: #800020;
   font-weight: bold;
+  margin-bottom: 100px;
 }
 
 @media only screen and (min-width: 768px) {
